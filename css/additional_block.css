@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./fonds/Roboto.ttf);
+  }
+  .additional {
+    font-family: Roboto, sans-serif;
+  }
+.additional {
+    background-image: url(./img/backgroundAdditional.png);
+    height: 634.734px;
+   padding-left: 50px;
+   padding-right: 50px;
+   
+  }
+  .additional p{
+    color:black;
+  }
+  .additional__header__main{
+    font-size: 32.75px;
+    text-align: center;
+    margin-bottom: 95px;
+  }
+  .additional img{
+    width: 322px;
+    height: 207px;
+  }
+  .additional_card{
+    display: flex;
+  
+  }
+  
+  
+  .additional__visa,
+  .additional__private,
+  .additional__photo,
+  .additional__medical {
+  
+   
+    width: 322px;
+  padding: 40px;
+  
+  }
+  .additional p{
+    font-size: 20px;
+    padding-top: 20px;
+    line-height: 30px;
+  }
+  .additional h2{
+    padding-top: 30px;
+  
+  }
