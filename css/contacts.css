@@ -1,0 +1,59 @@
+/* Contacts block styles */
+#contacts{
+    background-color: black;
+    padding: 70px 0 140px 0;
+    max-height: 700px;
+    min-height: 300px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+.contacts__column{
+-webkit-flex: 1; /* Safari */
+-ms-flex: 1; /* IE 10 */
+flex: 1; /* Standard syntax */
+}
+
+.contacts__text{
+    margin-top: 24px;
+}
+
+.contacts__left{
+    padding: 50px 80px 50px 80px;
+}
+
+.contacts__workinghours, .contacts__info, .contacts__address{
+    display: flex;
+}
+.contacts__links{
+    color: inherit;
+    text-decoration: none;
+}
+.contacts__dots, .contacts__text{
+    color: white;
+}
+.contacts__background{
+    display: block;
+    margin-bottom: -140px;
+}
+
+.contacts__background-image{
+    display: inherit;
+    max-height: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.contacts__content{
+    color: rgb(110,110,110);
+}
+
+.contacts__subtitle, .contacts__title{
+    color: rgb(241,195,36);
+}
+
+.contacts__subtitle{
+    padding: 8px 15px 8px 0;
+    vertical-align: center;
+}
+/* End Contacts block styles */
