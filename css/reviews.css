@@ -1,0 +1,28 @@
+.reviews{
+    background-color: black;
+}
+
+.reviews__articles{
+    flex-direction: column;
+}
+
+.reviews__title{
+    color: var(--title-color-on-dark);
+    text-align: center;
+}
+
+.reviews-text{
+    text-align: center;   
+}
+
+.reviews__name{
+    font-family: 'Dosis', sans-serif;
+    font-size: 22px;
+    color: var(--title-color-on-dark);
+    text-align: center;
+}
+
+.reviews__dots{
+    text-align: center;
+    color: white;   
+}
