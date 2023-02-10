@@ -15,6 +15,9 @@ font-family: 'Roboto', sans-serif;
 :root {
     scroll-behavior: smooth;
     --title-color-on-dark:#f1c524;
+    --title-color-light: #fff;
+    --text-color-on-dark: #6e6e6e;
+    --dark-fon-color: #141414;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
 }
