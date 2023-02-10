@@ -1,4 +1,13 @@
 .team__list {
     background-color: var(--title-color-light);
-    padding: 5em 2em 3em 2em;
+}
+.team__list h2 {
+    text-align: center;
+}
+.team__image {
+    width: 300px;
+}
+
+.team__carousel {
+    display: flex;
 }
