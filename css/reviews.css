@@ -7,6 +7,8 @@
 .reviews__articles{
     flex-direction: column;
     background-color: var(--light-dark-bacground-color);
+    margin-left: -24px;
+    margin-right: -24px;
 }
 
 .reviews__title{
@@ -21,6 +23,7 @@
     line-height: 26.52px;
     padding-left: 24px;
     padding-right: 24px;
+    padding-top: 30px;
 }
 
 .reviews__name{
@@ -32,19 +35,9 @@
     margin-top: 20px;
 }
 
-.reviews__dots{
-    text-align: center;
-    color: var(--title-color-light);
-    padding-bottom: 45px;
-}
-
 .reviews__customer-text{
     padding-right: 20px;
     padding-bottom: 30px;
     padding-left: 20px;
 }
 
-.reviews__image{
-    margin-left: -24px;
-    margin-right: -24px;
-}
