@@ -17,8 +17,11 @@
     font-size: 25px;
 }
 
-header a,
-p {
+.header p {
+    color: white;
+}
+
+.header a {
     color: white;
 }
 

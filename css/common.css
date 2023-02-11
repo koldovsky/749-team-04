@@ -22,12 +22,16 @@ font-family: 'Roboto', sans-serif;
     font-size: 17px;
 }
 
-h2{
+h2 {
     font-family: 'Dosis', sans-serif;
     font-size: 34px;
     font-weight: 700;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
 
 .complex_list,ul {
     display: flex;
@@ -38,4 +42,13 @@ h2{
 .complex_list, ul li {
     padding: 10px;
     list-style-type: none;
+}
+
+.social-logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.carousel__social-logos, .footer-icons {
+    display: flex;
 }
