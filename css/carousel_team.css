@@ -1,7 +1,8 @@
-.team__list {
-    background-color: var(--title-color-light);
-}
 .team__list h2 {
+    text-align: center;
+}
+
+.team__dots {
     text-align: center;
 }
 .team__image {
@@ -10,4 +11,21 @@
 
 .team__carousel {
     display: flex;
+}
+
+.carousel__member-name {
+    font-family: 'Dosis', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.carousel__member_job {
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    overflow-wrap: break-word;
 }
