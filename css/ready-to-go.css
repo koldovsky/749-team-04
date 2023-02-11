@@ -1,0 +1,17 @@
+.ready__header__main{
+    color: rgb(20,20,20);
+    font-family: 'Dosis', sans-serif;
+    font-size: 48px;
+}
+
+.ready__main{
+    color: rgb(20,20,20);
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ready__dots-main{
+    color:aqua;
+    font-size: 30px;
+    font-family: 'Roboto', cursive;
+}

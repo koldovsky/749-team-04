@@ -1,0 +1,25 @@
+.tanzania-tour-description-question-answer{
+    background-color: var(--fon-color);
+    text-align: center;
+    padding: 60px 24px 60px 24px;
+}
+
+.tour-description-question-answer{
+    padding: 30px 14px 30px 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-description-question{
+    color: #6e6e6e;
+    font-family: var(--header-font), sans-serif;
+    font-size: 1.3em;
+    margin-bottom: 1.3em;
+}
+
+.tour-description-answer{
+    color: var(--header-text-color);
+    font-size: 1.9em;
+    font-family: var(--header-font), sans-serif;
+    line-height: 1em;
+}

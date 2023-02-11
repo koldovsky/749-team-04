@@ -1,0 +1,43 @@
+.reviews{
+    background-color: var(--dark-background-color);
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
+.reviews__articles{
+    flex-direction: column;
+    background-color: var(--light-dark-bacground-color);
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+.reviews__title{
+    color: var(--title-color-on-dark);
+    text-align: center;
+    line-height: 40.12px;
+}
+
+.reviews-text{
+    text-align: center;  
+    color: var(--title-color-light);
+    line-height: 26.52px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 30px;
+}
+
+.reviews__name{
+    font-family: 'Dosis', sans-serif;
+    font-size: 22px;
+    color: var(--title-color-on-dark);
+    text-align: center;
+    line-height: 28.82px;
+    margin-top: 20px;
+}
+
+.reviews__customer-text{
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+

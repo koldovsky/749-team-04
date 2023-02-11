@@ -1,0 +1,53 @@
+.header__tanzania{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(../img/tanzania_header_background.jpg);
+    background-size: cover;
+}
+
+.tanzania-tour-description{
+    text-align: center;
+    padding: 0px 24px 0px 24px;
+}
+
+.tanzania-contacts-logo img{
+    max-width: 113px;
+    max-height: 75px;
+}
+
+.header__tanzania-contacts{
+    padding: 30px 24px 30px 24px;
+}
+
+.header__tanzania_image_wrapper{
+    border: 10px solid;
+    border-color: var(--text-color);
+    margin: 80px 24px 45px 24px;
+    height: 8em;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__tanzania_image_wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+
+}
+
+.tour-description-header{
+    color: var(--header-text-color);
+    font-size: 1.9em;
+    font-family: var(--header-font), sans-serif;
+    line-height: 1.2em;
+}
+
+.tanzania-contacts-name,
+.nav__tanzania,
+.nav__tanzania-item,
+.tanzania-contacts-email{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: flex;
+}

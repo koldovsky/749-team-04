@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&family=Leckerli+One&family=Roboto:wght@400;700&display=swap');
+
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'Leckerli One', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+    --title-color-on-dark:#f1c524;
+    --title-color-light: #fff;
+    --text-color-on-dark: #6e6e6e;
+    --dark-fon-color: #141414;
+    --dark-background-color: #000;
+    --light-dark-bacground-color: rgba(255, 255, 255, 0.07);
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.complex_list,ul {
+    display: flex;
+    justify-content: center;
+
+    font-size: 20px;
+}
+.complex_list, ul li {
+    padding: 10px;
+    list-style-type: none;
+}
+
+.social-logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.carousel__social-logos, .footer-icons {
+    display: flex;
+}
