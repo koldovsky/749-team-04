@@ -17,12 +17,21 @@
     padding: 30px 24px 30px 24px;
 }
 
-.header__tanzania_image_wrapper img{
+.header__tanzania_image_wrapper{
     border: 10px solid;
     border-color: var(--text-color);
-    width: 95%;
+    margin: 80px 24px 45px 24px;
+    height: 8em;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__tanzania_image_wrapper img{
+    object-fit: cover;
+    width: 100%;
     height: auto;
-    margin: 80px 2.5% 45px 2.5%;
 
 }
 
@@ -41,11 +50,4 @@
     width: 0;
     height: 0;
     display: flex;
-}
-
-@media (min-widht: 500px){
-    .header__tanzania_image_wrapper img{
-       max-width: 1150px;
-       margin: 80px auto 45px auto;
-    }
 }
