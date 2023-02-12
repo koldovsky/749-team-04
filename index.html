@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safari Tour</title>
     <link rel="shortcut icon" href="img/s_logo.png" type="other/s-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -26,45 +29,30 @@
     <!-- Katerina Burdeyna – Header - Block1 -->
     <header class="header">
         <div class="header__inform">
-          <p class="header__general_name">Safari Tours</p>
-          <a href="index.html" class="header__logo-leopard">
-            <img
-              class="header__logo-leopard"
-              src="img/logo_leopard.png"
-              alt="logo-leopard"
-            />
-          </a>
-          <a class="header__email" href="mailto:mango-travel@email.com"
-            >mango-travel@email.com</a
-          >
+            <p class="header__general_name">Safari Tours</p>
+            <a href="index.html" class="header__logo-leopard">
+                <img class="header__logo-leopard" src="img/logo_leopard.png" alt="logo-leopard">
+            </a>
+            <a class="header__email" href="mailto:mango-travel@email.com">mango-travel@email.com</a>
         </div>
-
-
-
-
-
-
-
-
 
         <nav class="header_nav">
 
             <div class="navbar">
-            
-
                 <div class="dropdown">
-                         <form>
-                        <input class="dropbtn button_my" type="button" value="Tours" onClick='location.href="#our_tours"'>
-                        </form>
-        
+                    <form>
+                        <input class="dropbtn button_my" type="button" value="Tours"
+                            onClick='location.href="#our_tours"'>
+                    </form>
 
-                                  
-        
-                  <div class="dropdown-content">
-                    <a href="tanzania_page.html"class="header__menu-list">Tanzania</a>
-                    <a href="tanzania_page.html"class="header__menu-list">Moshi</a>
-                    <a href="tanzania_page.html"class="header__menu-list">Serengeti</a>
-                  </div>
+
+
+
+                    <div class="dropdown-content">
+                        <a href="tanzania_page.html" class="header__menu-list">Tanzania</a>
+                        <a href="tanzania_page.html" class="header__menu-list">Moshi</a>
+                        <a href="tanzania_page.html" class="header__menu-list">Serengeti</a>
+                    </div>
                 </div>
                 <a href="#services" class="header__menu-item">Services </a>
                 <a href="#about_us" class="header__menu-item">About us </a>
@@ -72,8 +60,8 @@
                 <a href="#testimonials" class="header__menu-item">Testimonials</a>
                 <a href="#contacts" class="header__menu-item">Contacts</a>
 
-                
-              </div>
+
+            </div>
 
 
 
@@ -103,14 +91,14 @@
 
 
         </nav>
-  
+
         <div class="header__banner">
-          <h1 class="header__title">Mango Travel</h1>
-          <p class="header__text">
-            Spectacular safari tours in: Tanzania, Kenya, Rwanda
-          </p>
+            <h1 class="header__title">Mango Travel</h1>
+            <p class="header__text">
+                Spectacular safari tours in: Tanzania, Kenya, Rwanda
+            </p>
         </div>
-      </header>
+    </header>
     <!-- Katerina Burdeyna – Header - Block1 -->
     <main>
         <!-- Igor Kryshtafovych - About Us – Block2 -->
@@ -221,44 +209,52 @@
         <!-- Leonid Shamarin - Additional Services We Provide – Block5 -->
         <section class="additional" id="services">
 
-            <div class="additional__header__main">
-                <h2>Additional Services We Provide </h2>
-                <span class="kvadratyky">....</span>
-
-
-            </div>
-            <div class="additional_card">
-                <div class="additional__visa">
-                    <img src="img/additional_visa.jfif" alt="VisaOpening">
-                    <h2>Visa Opening</h2>
-                    <p>
-                        We provide visa support for citizens of any country. Our experts
-                        will advise on all visa issues.
-                    </p>
+            <div class="container-fluid overflow-hidden">
+                <div class="additional__header__main">
+                    <h2>Additional Services We Provide</h2>
+                    <span class="bottom">....</span>
                 </div>
-                <div class="additional__private">
-                    <img src="img/additional_private.png" alt="PrivateTransfer">
-                    <h2>Private Transfer</h2>
-                    <p>
-                        We can arrange a private transfer at the start or end point, book a
-                        hotel or offer a continuation of the rest after a safari.
-                    </p>
-                </div>
-                <div class="additional__photo">
-                    <img src="img/additional_report.jfif" alt="PhotoReport">
-                    <h2>Photo Report</h2>
-                    <p>
-                        For an additional fee, you can get a full photo and video report on
-                        the trip, as well as a personal photo shoot.
-                    </p>
-                </div>
-                <div class="additional__medical">
-                    <img src="img/additional_medical.jfif" alt="MedicalInsurance">
-                    <h2>Medical Insurance</h2>
-                    <p>
-                        Reliable medical insurance that really covers the risks if something
-                        happens while traveling.
-                    </p>
+                <div class="row  row-cols-4 ">
+                    <div class="card_my col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <img src="img/additional_visa.jfif" alt="VisaOpening">
+                        <div class="card-body">
+                            <h2>Visa Opening</h2>
+                            <p>
+                                We provide visa support for citizens of any country. Our experts
+                                will advise on all visa issues.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card_my  col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <img src="img/additional_private.png" alt="PrivateTransfer">
+                        <div class="card-body">
+                            <h2>Private Transfer</h2>
+                            <p>
+                                We can arrange a private transfer at the start or end point, book
+                                a hotel or offer a continuation of the rest after a safari.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card_my  col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <img src="img/additional_report.jfif" alt="PhotoReport">
+                        <div class="card-body">
+                            <h2>Photo Report</h2>
+                            <p>
+                                For an additional fee, you can get a full photo and video report
+                                on the trip, as well as a personal photo shoot.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card_my  col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <img src="img/additional_medical.jfif" alt="MedicalInsurance">
+                        <div class="card-body">
+                            <h2>Medical Insurance</h2>
+                            <p>
+                                Reliable medical insurance that really covers the risks if
+                                something happens while traveling.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -487,6 +483,10 @@
     </footer>
     <!-- Iryna Vovk – Footer – Block11 -->
     <script src="js/our_tours_slider.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
