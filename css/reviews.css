@@ -76,6 +76,18 @@
     justify-content: center;
 }
 
+.reviews__image-desktop{
+    max-width: 50%;
+    min-height: 250px;
+    flex-basis: 50%;
+    object-fit: cover;
+}
+
+.reviews__image{
+    object-fit: cover;   
+    height: 250px;
+}
+
 @media(min-width: 768px){
     .reviews-mobile-style{
         display: none;
