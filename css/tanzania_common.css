@@ -8,7 +8,7 @@
     --header-text-color: #f1c324;
     --text-color: #fff;
     --header-font: 'Dosis';
-    --fon-color: #080707;
+    --bg-color: #080707;
     font-size: 1em;
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
@@ -29,4 +29,8 @@ img {
 .dot{
     font-size: 3em;
     letter-spacing: -0.07em;
+}
+
+body{
+    overflow: visible;
 }
