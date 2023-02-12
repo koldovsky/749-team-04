@@ -1,0 +1,76 @@
+footer{
+    background-image: url(../img/footer-backgroung.png);
+    background-size: cover;
+    
+}
+.footer-nav{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: none;
+    justify-content: center;
+}
+.footer-nav-tors{
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+    font-size: 17px;
+}
+.footer-nav-services{
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+    font-size: 17px;
+}
+.footer-nav-about{
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+    font-size: 17px;
+}
+.footer-nav-team{
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+    font-size: 17px;
+}
+.footer-nav-testimonials{
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+    font-size: 17px;
+}
+.footer-nav-contacts{
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+    font-size: 17px;
+}
+.footer-icon-logo{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 125px;
+    justify-content: center;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-title{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    
+}
+.footer-text{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 14px;
+}
+.container-footer{
+    padding: 200px;
+    margin: auto;
+}
