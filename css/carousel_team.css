@@ -1,17 +1,57 @@
-.team__list h2 {
+.team__list {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 115px;
+    display: block;
+    position: relative;
+}
+
+
+.team__list-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.team__title {
+    text-transform: none;
     text-align: center;
 }
 
-.team__dots {
-    text-align: center;
+.team__title::after {
+    left: 50%;
+    right: auto;
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 5px;
+    background: linear-gradient(90deg, var(--brand-color) 0%, var(--brand-color) 14.28%, rgba(255, 255, 255, 0) 14.28%, rgba(255, 255, 255, 0) 28.56%, 
+    var(--brand-color) 28.56%, var(--brand-color) 42.84%, rgba(255, 255, 255, 0) 42.84%, rgba(255, 255, 255, 0) 57.12%, var(--brand-color) 57.12%, 
+    var(--brand-color) 71.8%, rgba(255, 255, 255, 0) 71.8%, rgba(255, 255, 255, 0) 85.68%, var(--brand-color) 85.68%, var(--brand-color) 100%);
+    bottom: 0;
 }
+
 .team__image {
     width: 300px;
 }
 
+.carousel__block {
+    margin-top: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 1200px;
+}
+
 .team__carousel {
     display: flex;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+    margin-left: -15px;
+    margin-right: -15px;
 }
+
+
 
 .carousel__member-name {
     font-family: 'Dosis', sans-serif;
@@ -26,5 +66,9 @@
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    overflow-wrap: break-word;
+}
+
+.carousel__social-logos {
+    justify-content: center;
+    text-align: center;
 }
