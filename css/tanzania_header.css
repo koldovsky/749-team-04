@@ -20,9 +20,9 @@
 .header__tanzania_image_wrapper img{
     border: 10px solid;
     border-color: var(--text-color);
-    width: 95%;
+    width: 90%;
     height: auto;
-    margin: 80px 2.5% 45px 2.5%;
+    margin: 80px 5% 45px 5%;
 
 }
 
@@ -41,9 +41,29 @@
     display: flex;
 }
 
-@media (min-widht: 999px){
+.tour_list_nav{
+    visibility: hidden;
+}
+
+@media (min-width: 999px){
     .header__tanzania_image_wrapper img{
        max-width: 1150px;
-       margin: 20px auto 45px auto;
+       margin: 65px auto 45px auto;
+    }
+
+    .tour_list_nav{
+        visibility: hidden;
+        position: absolute;
+        background-color: white;
+        color: #5A5D61;
+        max-width: 40em;
+        padding: 1em 1.6em;
+        border-radius: 3px;
+        top: 190px;
+        left: 30%;
+    }
+
+    .tour_list_nav li{
+       list-style: none;
     }
 }
