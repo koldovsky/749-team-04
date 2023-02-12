@@ -15,11 +15,12 @@
   padding-top: 150px;
   font-size: 50px;
   text-align: center;
-  margin-bottom: 95px;
+  margin-bottom: 50px;
 }
 
 .additional__header__main h2 {
-  font-size: 50px;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .card_my {
