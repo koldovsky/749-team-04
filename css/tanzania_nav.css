@@ -4,9 +4,10 @@
 .nav_icon{
     width: 25px;
     height: auto;
-    margin: 30px 34px auto auto;
+    margin: 0 34px auto auto;
     position: absolute;
     right: 0;
+    top: 53px;
 }
 
 .nav_icon_line{
@@ -56,6 +57,7 @@
     z-index: 0;
     transition: opacity .3s ease-out;
 }
+
 .nav__tanzania-item{
     color: var(--text-color);
     width: fit-content;
@@ -80,4 +82,82 @@
     color: var(--text-color);
     font-size: 17px;
     font-weight: 700;
+}
+
+@media (min-width: 999px) {
+
+    .header__tanzania-contacts{
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+    }
+
+    .nav_icon{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+    .tanzania-contacts-name{
+        visibility: visible;
+        font-size: 14px;
+        width: fit-content;
+        height: auto;
+        font-weight: 200;
+        justify-self: start;
+    }
+
+    .tanzania-contacts-email{
+        visibility: visible;
+        width: fit-content;
+        height: auto;
+        color: var(--text-color);
+        font-size: 14px;
+        font-weight: 200;
+        justify-self: end;
+    }
+
+    .tanzania-contacts-logo{
+       margin: auto;
+    }
+
+    .nav__tanzania {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+
+    .tanzania-contacts-logo_nav{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .nav__tanzania-item_container {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin-top: 30px;
+    }
+    
+    .nav__tanzania-item_container {
+        visibility: visible;
+        width: fit-content;
+        margin: 20px auto 40px auto;
+    }
+
+    .nav__tanzania-item {
+        width: fit-content;
+        text-align: center;
+        margin: 0 10px 0 10px;
+        font-size: 14px;
+    }
+
+    .tanzania-contacts-email_nav{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
 }
