@@ -49,13 +49,13 @@
   justify-content: center;
 }
 
-.navbar {
+.navbar_header {
   overflow: hidden;
 
   font-family: Arial;
 }
 
-.navbar a {
+.navbar_header a {
   float: left;
   font-size: 16px;
   color: white;
@@ -64,12 +64,12 @@
   text-decoration: none;
 }
 
-.dropdown {
+.dropdown_header{
   float: left;
   overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.dropdown_header .dropbtn {
   font-size: 16px;
   border: none;
   outline: none;
@@ -104,6 +104,6 @@
   color: gold;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown_header:hover .dropdown-content {
   display: block;
 }
