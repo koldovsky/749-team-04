@@ -1,52 +1,89 @@
 .header {
   background-image: url(../img/header_backgraund.png);
-  height: 1100px;
+  vertical-align: baseline;
+}
+
+.header__top {
+  margin: 0 auto;
+  padding: 0;
+  }
+
+.header__big-bottom {
+  padding-top: 90px;
+  padding-bottom: 130px;
+  font-weight: 400;
+line-height: 16.52px;
+overflow-wrap: break-word;
+width: 382px;
+z-index: 0;
+
 }
 
 .header__inform {
-  padding-top: 50px;
+  padding: 0, 24px, 0, 24px;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+}
+.header_topper {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
 
-  margin: 0 50px;
+.header__logo-leopard {
+margin: 0;
+padding: 0;
+border: 0;
+width: 113px;
+justify-content: inherit;
 }
-.header__inform .header__logo-leopard{
-    padding-left: 55px;
-}
+
 .header__inform p,
 .header__email {
-  padding-top: 2%;
-  font-size: 25px;
+    padding-top: 2%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 19px;
 }
 
 .header p {
-  color: white;
-}
+  color: var(--title-color-light);
+  }
 
 .header a {
-  color: white;
+  color: var(--title-color-light);
 }
 
+.header_nav a {
+  justify-content:space-between;
+  align-items: center;
+  max-width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  }
 
 .header__banner {
-  padding-top: 10%;
+    padding: 0, 24px, 0, 24px;
 }
 
 .header__title {
-  color: white;
-  font-size: 120px;
-  text-align: center;
+    color: var(--title-color-light);
+    font-size: 62px;
+    letter-spacing: -1.24px;
+    line-height: 68.2px;
+    text-align: center;
+    font-family: 'Leckerli One', cursive;
 }
 
 .header__text {
-  padding-top: 15px;
-  text-align: center;
-  font-size: 20px;
-}
-.header_nav {
-  padding-top: 50px;
-  display: flex;
-  justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 28px;
 }
 
 .navbar_header {
@@ -91,7 +128,7 @@
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: var(--dark-background-color);
   padding: 22px 30px;
   text-decoration: none;
   display: block;
@@ -101,7 +138,7 @@
 }
 
 .dropdown-content a:hover {
-  color: gold;
+  color: var(--title-color-on-dark);
 }
 
 .dropdown_header:hover .dropdown-content {
