@@ -21,7 +21,7 @@
     text-align: center;
 }
 
-.team__title::after {
+/* .team__title::after {
     left: 50%;
     right: auto;
     content: "";
@@ -32,7 +32,19 @@
     #24b8f1 28.56%, #24b8f1 42.84%, rgba(255, 255, 255, 0) 42.84%, rgba(255, 255, 255, 0) 57.12%, #24b8f1 57.12%, 
     #24b8f1 71.8%, rgba(255, 255, 255, 0) 71.8%, rgba(255, 255, 255, 0) 85.68%, #24b8f1 85.68%, #24b8f1 100%);
     bottom: 0;
+} */
+
+.team__dots {
+    text-align: center;
+    padding-bottom: 30px;
 }
+
+.team__dot {
+    height: 5px;
+    width: 5px;
+    background-color: var(--brand-color);
+    display: inline-block;
+  }
 
 .team__image {
     width: 300px;
