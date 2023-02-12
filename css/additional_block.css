@@ -29,8 +29,8 @@
 
 
 .additional img {
-  width: 322px;
-  height: 250px;
+  height: 250px; 
+  width: 323px;
 }
 
 
@@ -39,6 +39,7 @@
   font-size: 20px;
   padding-top: 20px;
   line-height: 30px;
+  width: 323px;
 }
 
 .additional h2 {
@@ -46,8 +47,8 @@
 }
 
 .bottom {
-  margin-top: -50px;
-  font-size: 2em;
+  margin-top: -60px;
+  font-size: 1.5em;
   letter-spacing: -0.07em;
   color: var(--brand-color);
   font-family: 'Robotobold', sans-serif;
