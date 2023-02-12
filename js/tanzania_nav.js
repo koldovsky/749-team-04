@@ -11,3 +11,16 @@
   
     document.getElementById("nav_icon_tanzania_close").onclick = function(){close_nav();}
     document.getElementById("icon_tanzania_nav").onclick = function(){drop_nav();}
+
+
+
+    function drop_tour_list_nav(){
+        document.getElementById("tour_list_nav").style.visibility = "visible";
+    }
+    
+    function close_tour_list_nav(){
+        document.getElementById("tour_list_nav").style.visibility = "hidden";
+    }
+
+    document.getElementById("tanzania_header_contacts").onclick = function(){close_tour_list_nav();}
+    document.getElementById("tour_list_bt").onclick = function(){drop_tour_list_nav();}
