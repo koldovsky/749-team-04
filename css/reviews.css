@@ -66,16 +66,6 @@
     color: var(--title-color-light);
 }
 
-.reviews-dot{
-    padding-bottom: 24px;
-    text-align: center;  
-    font-size: 3em;
-    letter-spacing: -0.07em;
-    color: var(--title-color-light);
-    font-family: 'Robotobold', sans-serif;
-    justify-content: center;
-}
-
 .reviews__image-desktop{
     max-width: 50%;
     min-height: 250px;
