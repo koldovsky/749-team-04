@@ -9,7 +9,6 @@ footer{
     display: flex;
     flex-direction: row;
     flex: 1;
-    align-items: none;
     justify-content: center;
 }
 .footer-nav-tors{
@@ -55,7 +54,6 @@ footer{
     width: 125px;
     justify-content: center;
     display: block;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
