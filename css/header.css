@@ -103,16 +103,6 @@ justify-content: inherit;
 }
 
 .header__text {
-<<<<<<< HEAD
-  padding-top: 15px;
-  text-align: center;
-  font-size: 20px;
-}
-.header_nav {
-  padding-top: 50px;
-  display: flex;
-  justify-content: center;
-=======
     font-family: 'Roboto', sans-serif;
     padding-top: 15px;
     text-align: center;
@@ -120,7 +110,6 @@ justify-content: inherit;
     font-weight: 700;
     font-style: normal;
     line-height: 28px;
->>>>>>> 95f60fe3d0cc825c04eca7094f64b2255588d1ba
 }
 
 .navbar {
@@ -181,8 +170,6 @@ justify-content: inherit;
 .dropdown:hover .dropdown-content {
   display: block;
 }
-<<<<<<< HEAD
-=======
 
 @media (min-width: 992px){
   .header__general_name,
@@ -196,4 +183,3 @@ justify-content: inherit;
     width: auto;
   }
 }
->>>>>>> 95f60fe3d0cc825c04eca7094f64b2255588d1ba
