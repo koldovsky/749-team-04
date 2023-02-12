@@ -1,5 +1,5 @@
 .additional {
-  font-family: Roboto, sans-serif;
+  font-family: Dosis, sans-serif;
 }
 
 .additional {
@@ -31,21 +31,18 @@
 .additional img {
   width: 322px;
   height: 250px;
-
 }
 
 
-
 .additional p {
+  font-family: Roboto;
   font-size: 20px;
   padding-top: 20px;
   line-height: 30px;
-
 }
 
 .additional h2 {
   padding-top: 30px;
-
 }
 
 .bottom {
@@ -56,7 +53,6 @@
   font-family: 'Robotobold', sans-serif;
   display: flex;
   justify-content: center;
-
 }
 
 
