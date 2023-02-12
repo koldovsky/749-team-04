@@ -62,3 +62,38 @@
   justify-content: center;
 
 }
+
+.additional img {
+  width: 322px;
+  height: 250px;
+
+}
+
+/* .additional_card{
+    display: flex;
+    justify-content: space-around;
+  }
+   */
+
+.additional p {
+  font-size: 20px;
+  padding-top: 20px;
+  line-height: 30px;
+
+}
+
+.additional h2 {
+  padding-top: 30px;
+
+}
+
+.bottom {
+  margin-top: -50px;
+  font-size: 2em;
+  letter-spacing: -0.07em;
+  color: aqua;
+  font-family: 'Robotobold', sans-serif;
+  display: flex;
+  justify-content: center;
+
+}
