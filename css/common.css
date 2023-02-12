@@ -56,13 +56,3 @@ img {
 .carousel__social-logos, .footer-icons {
     display: flex;
 }
-
-.dot{
-    font-size: 3em;
-    letter-spacing: -0.07em;
-    color: var(--title-color-light);
-    font-family: 'Robotobold', sans-serif;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
