@@ -39,16 +39,16 @@
 
 
 }
-
-.quote__botton a {
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
+.ready__main{
+    padding-bottom: 30px;
 }
+
 
 .quote__botton {
     padding: 20px;
     border: none;
     background-color: aqua;
-
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
 }
