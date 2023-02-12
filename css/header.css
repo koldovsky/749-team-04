@@ -4,6 +4,8 @@
 }
 
 .header__top {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 0;
   }
@@ -20,10 +22,12 @@ z-index: 0;
 }
 
 .header__inform {
-  padding: 0, 24px, 0, 24px;
+align-items: center;
+box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 30px;
   width: 100%;
 }
 .header_topper {
@@ -31,6 +35,12 @@ z-index: 0;
   padding-top: 30px;
   padding-bottom: 30px;
   justify-content: space-between;
+}
+
+.header__general_name,
+.header__email {
+  display: none;
+  visibility: hidden;
 }
 
 .header__logo-leopard {
@@ -47,6 +57,7 @@ justify-content: inherit;
     font-family: 'Dosis', sans-serif;
     font-size: 19px;
 }
+
 
 .header p {
   color: var(--title-color-light);
@@ -143,4 +154,14 @@ justify-content: inherit;
 
 .dropdown_header:hover .dropdown-content {
   display: block;
+}
+
+@media (min-width: 992px){
+  .header__general_name,
+  .header__email {
+    visibility: visible;
+      }
+      .navbar_header {
+        overflow: visible;
+      }
 }
