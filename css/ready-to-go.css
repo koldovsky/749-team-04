@@ -1,30 +1,33 @@
 .ready__header__main {
     color: rgb(20, 20, 20);
     font-family: 'Dosis', sans-serif;
-    font-size: 48px;
+    font-size: 2em;
+    margin-bottom: 0;
 }
 
 .ready {
     background-image: url(../img/backgrounfreadytogo.png);
     height: 800px;
-    padding-top: 300px;
-    padding-left: 100px;
     display: flex;
 }
 
 .ready div {
     justify-content: left;
     text-align: center;
+    display: block;
+    margin: auto;
+    padding: 15px;
 }
 
 .ready__main {
     color: rgb(20, 20, 20);
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
 }
 
 .ready__dots-main {
-    color: aqua;
+    color: #24b8f1;
     font-size: 30px;
     font-family: 'Roboto', cursive;
 }
@@ -33,12 +36,11 @@
     margin-top: -500px;
     font-size: 5em;
     letter-spacing: -0.07em;
-    color: aqua;
+    color: #24b8f1;
     font-family: 'Robotobold', sans-serif;
-
-
-
+    line-height: 0;
 }
+
 .ready__main{
     padding-bottom: 30px;
 }
@@ -47,8 +49,17 @@
 .quote__botton {
     padding: 20px;
     border: none;
-    background-color: aqua;
+    background-color: #24b8f1;
     font-weight: bold;
     text-decoration: none;
     color: white;
+}
+
+@media (min-width: 760px) {
+    .ready div {
+        position: absolute;
+        width: 50%;
+        left: 0;
+        align-self: center; 
+    }
 }

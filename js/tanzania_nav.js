@@ -11,8 +11,7 @@
     }
 
   
-        document.getElementById("nav_icon_tanzania_close").onclick = function(){close_nav();}
-        document.getElementById("icon_tanzania_nav").onclick = function(){drop_nav();}
+        
 
 
 
@@ -34,3 +33,14 @@
             document.getElementById("tour_list_nav").style.height = "0";
         }
     })
+
+    let myMediaQueryNav = window.matchMedia('(max-width: 999px)');
+    function widthChangeCallbackNav(myMediaQueryNav) {
+        if(myMediaQueryNav.matches) {
+            document.getElementById("nav_icon_tanzania_close").onclick = function(){close_nav();}
+            document.getElementById("icon_tanzania_nav").onclick = function(){drop_nav();}
+         }
+      }
+    
+      widthChangeCallbackNav(myMediaQueryNav);
+      myMediaQueryNav.addEventListener('change', widthChangeCallbackNav);
