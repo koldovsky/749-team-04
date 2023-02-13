@@ -1,24 +1,25 @@
-/* Contacts block styles */
 #contacts{
     background-color: black;
     padding: 70px 0 140px 0;
-    max-height: 700px;
-    min-height: 300px;
     display: -webkit-flex; /* Safari */
     display: flex;
 }
-.contacts__column{
--webkit-flex: 1; /* Safari */
--ms-flex: 1; /* IE 10 */
-flex: 1; /* Standard syntax */
-}
+
+
 
 .contacts__text{
     margin-top: 24px;
+    color: rgb(255,255,255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.contacts__wrapper{
+    background-color: rgba(255, 255, 255, 0.09);
 }
 
 .contacts__left{
-    padding: 50px 80px 50px 80px;
+   /* padding: 50px 80px 50px 80px; */
 }
 
 .contacts__workinghours, .contacts__info, .contacts__address{
@@ -28,9 +29,7 @@ flex: 1; /* Standard syntax */
     color: inherit;
     text-decoration: none;
 }
-.contacts__dots, .contacts__text{
-    color: white;
-}
+
 .contacts__background{
     display: block;
     margin-bottom: -140px;
@@ -40,8 +39,10 @@ flex: 1; /* Standard syntax */
     display: inherit;
     max-height: 100%;
     max-width: 100%;
-    margin-left: auto;
-    margin-right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: auto 0 0 auto;
 }
 
 .contacts__content{
@@ -56,4 +57,3 @@ flex: 1; /* Standard syntax */
     padding: 8px 15px 8px 0;
     vertical-align: center;
 }
-/* End Contacts block styles */
