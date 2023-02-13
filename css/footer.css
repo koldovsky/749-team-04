@@ -1,8 +1,3 @@
-footer{
-    background-image: url(../img/footer-backgroung.png);
-    background-size: cover;
-    
-}
 .footer-nav{
     display: block;
     font-family: 'Roboto', sans-serif;
@@ -60,15 +55,31 @@ footer{
 .footer-title{
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 14px;
-    
+    font-size: 16px;
+    padding-top: 20px;
 }
 .footer-text{
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 14px;
+    margin: 0;
 }
-.container-footer{
-    padding: 200px;
-    margin: auto;
+.footer-logo {
+    background-color: rgb(247, 249, 251);
+    width: 1336;
+    height: 390;
+    display: block;
+}
+.container-footer {
+    padding-top: 120px;
+    margin: 0;
+}
+.footer-icons {
+    margin: 0;
+    padding: 20;
+    border: 0;
+    width: 125px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
