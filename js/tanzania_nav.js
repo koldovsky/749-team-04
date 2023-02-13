@@ -24,3 +24,9 @@
 
     document.getElementById("tanzania_header_contacts").onclick = function(){close_tour_list_nav();}
     document.getElementById("tour_list_bt").onclick = function(){drop_tour_list_nav();}
+
+    document.addEventListener("click", function(e){
+        if(e.target.id != "tour_list_nav" && e.target.id != "tour_list_bt"){
+            close_tour_list_nav();
+        }
+    })
