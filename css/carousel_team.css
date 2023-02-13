@@ -1,7 +1,8 @@
-.container {
+/* .container {
     max-width: 1200px;
     margin: auto;
-}
+} */
+
 .team__list {
     padding-top: 10px;
     padding-bottom: 115px;
@@ -9,19 +10,20 @@
     position: relative;
 }
 
-
 .team__list-header {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
 }
+
 .team__title {
     text-transform: none;
     text-align: center;
 }
 
-/* .team__title::after {
+/* не виходить так: не прикріпляється унизу team__title
+.team__title::after {
     left: 50%;
     right: auto;
     content: "";
@@ -44,7 +46,7 @@
     width: 5px;
     background-color: var(--brand-color);
     display: inline-block;
-  }
+}
 
 .team__image {
     width: 300px;
@@ -65,8 +67,6 @@
     margin-right: -15px;
     flex-wrap: wrap;
 }
-
-
 
 .carousel__member-name {
     font-family: 'Dosis', sans-serif;
