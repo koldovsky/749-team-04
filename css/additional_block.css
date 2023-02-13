@@ -20,7 +20,7 @@
   margin-bottom: 50px;
 }
 
-.additional__header__main h2 {
+.additional__header__main_title {
   font-size: 48px;
   font-weight: 700;
 }
@@ -34,9 +34,12 @@
 .additional img {
   height: 208px; 
   width: 323px;
+  
 }
 
-
+.title{
+  font-weight: 400;
+}
 .additional p {
   font-family: Roboto;
   font-size: 20px;
