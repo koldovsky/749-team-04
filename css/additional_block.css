@@ -5,7 +5,9 @@
 .additional {
   background-image: url(../img/backgroundAdditional.png);
   /* height: 634.734px; */
-  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 740px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 150px;
@@ -57,5 +59,22 @@
   justify-content: center;
 }
 
+@media (min-width: 500px){
+  .card_my img{
+      display: flex;
+      width: 85%;
+      margin-left: 4%;
+      margin-right: 4%;
+  }
+  .card_my p, 
+  .card_my h2 {
+      display: flex;
+      width: 85%;
+      margin-left: 4%;
+      margin-right: 4%;
+  }
 
+
+
+}
 
