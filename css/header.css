@@ -11,6 +11,7 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
+  height: 135px;
 }
 
 .header__big-bottom {
@@ -59,8 +60,8 @@
   border: 0;
   width: 113px;
   justify-content: inherit;
+  z-index: 5;
 }
-
 
 .header p {
   color: var(--title-color-light);
@@ -78,9 +79,8 @@
   font-weight: bold;
 }
 
-
 .header__banner {
-  padding-top: 10%;
+  padding-top: 15%;
 }
 
 .header__title {
@@ -103,9 +103,8 @@
 }
 
 .header_nav li {
-  padding-top: 50px;
+  padding-top: 0%;
   display: flex;
-
 }
 
 .dropdown-menu a {
