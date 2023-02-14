@@ -1,24 +1,44 @@
 .about_us__grouped {
- background-color: white;
- display: flex;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
 }
+
 .about_us__text {
     color: rgb(110, 110, 110);
-    font-weight: 400;  
+    font-weight: 400;
 }
+
 .about_us__button {
     width: 115.625px;
     height: 50px;
     background-color: rgb(36, 184, 241);
 }
+
 .about_us__link {
     text-align: center;
     font-size: 12px;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     text-decoration-line: none;
     text-transform: uppercase;
-    cursor: pointer; 
-    vertical-align:middle;
-    left: 0px;
-    line-height: 12px;
+    cursor: pointer;
+    /*vertical-align: middle;*/
+    /*left: 0px;*/
+    /*line-height: 12px;*/
+}
+
+@media (min-width: 768px) {
+    .about_us__grouped {
+        flex-direction: row;
+    }
+}
+
+.about_us__container {
+    max-width: 992px;
+}
+.about_us__dots {
+    color: #24b8f1;
+    font-size: 30px;
+    font-family: 'Roboto', cursive;
 }
