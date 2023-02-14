@@ -1,12 +1,10 @@
-.about_us__grouped img {
-    width: 300px;
-}
 .about_us__grouped {
  background-color: white;
+ display: flex;
 }
 .about_us__text {
     color: rgb(110, 110, 110);
-    font-weight: 400;
+    font-weight: 400;  
 }
 .about_us__button {
     width: 115.625px;
