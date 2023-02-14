@@ -1,0 +1,132 @@
+.footer-nav {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+
+
+}
+
+.footer-nav ul {
+    display: flex;
+}
+
+
+.footer-nav li,
+.footer-text li {
+
+    padding-top: 20px;
+    list-style: none;
+}
+
+
+.footer-nav-tors {
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.footer-nav-services {
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.footer-nav-about {
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.footer-nav-team {
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.footer-nav-testimonials {
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.footer-nav-contacts {
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.footer-icon-logo {
+    margin: 0;
+    border: 0;
+    width: 125px;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-title {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.footer-text {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-logo {
+    background-color: rgb(247, 249, 251);
+
+}
+
+.container-footer {
+    padding-top: 120px;
+    margin: 0;
+}
+
+.footer-icons {
+    margin: 0;
+    border: 0;
+    width: 125px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 800px) {
+
+    .footer-nav li,
+    .footer-text li {
+        display: flex;
+        display: inline-flex;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+
+}
+
+@media (min-width: 500px) {
+
+    .footer-icons {
+        padding-left: 30px;
+    }
+
+    .footer-icons a {
+        padding: 10px;
+    }
+
+}

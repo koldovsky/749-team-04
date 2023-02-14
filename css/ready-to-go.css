@@ -3,7 +3,9 @@
     font-family: 'Dosis', sans-serif;
     font-size: 48px;
 }
-
+.Ready{
+   background-image: url(../img/); 
+}
 .ready__main{
     color: rgb(20,20,20);
     font-size: 20px;
@@ -15,3 +17,14 @@
     font-size: 30px;
     font-family: 'Roboto', cursive;
 }
+
+.ready_bottom {
+    margin-top: -50px;
+    font-size: 4em;
+    letter-spacing: -0.07em;
+    color: aqua;
+    font-family: 'Robotobold', sans-serif;
+    display: flex;
+    justify-content: center;
+  
+  }
