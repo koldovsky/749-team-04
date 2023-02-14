@@ -4,13 +4,6 @@
     font-size: 2em;
     margin-bottom: 0;
 }
-<<<<<<< HEAD
-.Ready{
-   background-image: url(../img/); 
-}
-.ready__main{
-    color: rgb(20,20,20);
-=======
 
 .ready {
     background-image: url(../img/backgrounfreadytogo.png);
@@ -28,7 +21,6 @@
 
 .ready__main {
     color: rgb(20, 20, 20);
->>>>>>> 88dac4075d11dfee4d6c77130215e1b390bf45bf
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     margin-top: 15px;
@@ -41,17 +33,6 @@
 }
 
 .ready_bottom {
-<<<<<<< HEAD
-    margin-top: -50px;
-    font-size: 4em;
-    letter-spacing: -0.07em;
-    color: aqua;
-    font-family: 'Robotobold', sans-serif;
-    display: flex;
-    justify-content: center;
-  
-  }
-=======
     margin-top: -500px;
     font-size: 5em;
     letter-spacing: -0.07em;
@@ -82,4 +63,3 @@
         align-self: center; 
     }
 }
->>>>>>> 88dac4075d11dfee4d6c77130215e1b390bf45bf
