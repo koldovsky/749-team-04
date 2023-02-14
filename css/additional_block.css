@@ -65,7 +65,7 @@
   justify-content: center;
 }
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .card_my img {
     display: flex;
     height: 300px;
