@@ -1,5 +1,5 @@
 .tanzania-tour-description-question-answer{
-    background-color: var(--bg-color);
+    background: linear-gradient(#080707fa, var(--bg-color));
     text-align: center;
     padding: 60px 24px 60px 24px;
 }

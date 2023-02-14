@@ -1,0 +1,50 @@
+.tour-cost-includes-excludes{
+    background: linear-gradient(#391521fa, var(--bg-color));
+    padding: 70px 60px 70px 60px;
+
+}
+
+.tour-cost-includes{
+    line-height: 2.5em;
+}
+
+.tour-cost-excludes{
+    line-height: 2.5em;
+}
+
+.tour-cost-includes svg{
+    height: 50px;
+    width: 50px;
+}
+
+.tour-cost-excludes svg{
+    height: 50px;
+    width: 50px;
+}
+
+.tour-cost-includes-list-item{
+    list-style: url('/img/tanzania/check-mark-svgrepo-com.svg');
+}
+
+
+.tour-cost-excludes-list-item{
+    list-style: url('/img/tanzania/ban-svgrepo-com.svg');
+}
+
+.tour-cost-includes-header,
+.tour-cost-excludes-header{
+    color: var(--header-text-color);
+    font-size: 1.2em;
+    font-weight: 600;
+
+}
+
+.tour-cost-includes-list{
+    padding: 20px;
+}
+
+
+.tour-cost-excludes-list{
+    padding: 20px;
+}
+
