@@ -5,9 +5,11 @@
 .additional {
   background-image: url(../img/backgroundAdditional.png);
   /* height: 634.734px; */
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  object-fit: cover;
   min-height: 740px;
+  width: 100%;
+  height: 100%;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 150px;
@@ -26,20 +28,21 @@
 }
 
 .card_my {
-  padding-left: 50px;
+  padding-left: 60px;
   border: none;
 }
 
 
 .additional img {
-  height: 208px; 
+  height: 208px;
   width: 323px;
-  
+
 }
 
-.title{
+.title {
   font-weight: 600;
 }
+
 .additional p {
   font-family: Roboto;
   font-size: 20px;
@@ -62,22 +65,24 @@
   justify-content: center;
 }
 
-@media (min-width: 500px){
-  .card_my img{
-      display: flex;
-      width: 85%;
-      margin-left: 4%;
-      margin-right: 4%;
+@media (max-width: 800px) {
+  .card_my img {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    padding-left: 5px;
+    margin-left: -30px;
+
   }
-  .card_my p, 
+
+  .card_my p,
   .card_my h2 {
-      display: flex;
-      width: 85%;
-      margin-left: 4%;
-      margin-right: 4%;
+    display: flex;
+    width: 100%;
+    padding-left: 5px;
+    margin-left: -30px;
   }
-
-
-
 }
+
+
 
