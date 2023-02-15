@@ -79,6 +79,9 @@
     .reasons__blocktitle {
         font-size: 34px;
     }
+    /* .reason__item{
+        flex-basis: 45%;
+    } */
 }
 
 @media (min-width: 767px) {
