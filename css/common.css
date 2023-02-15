@@ -14,14 +14,14 @@ font-family: 'Roboto', sans-serif;
 
 :root {
     scroll-behavior: smooth;
-    --title-color-on-dark:#f1c524;
+    --title-color-on-dark: #f1c524;
     --title-color-light: #fff;
     --text-color-on-dark: #6e6e6e;
     --dark-fon-color: #141414;
     --dark-background-color: #000;
     --light-dark-bacground-color: rgba(255, 255, 255, 0.07);
     --dark-gradient-background-color: rgb(0, 0, 0, 0.8);
-    --brand-color:#24b8f1;
+    --brand-color: #24b8f1;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
 }
@@ -37,18 +37,17 @@ img {
     width: 100%;
 }
 
-
-
 .social-logo-img {
     width: 40px;
     height: 40px;
 }
 
-.carousel__social-logos, .footer-icons {
+.carousel__social-logos,
+.footer-icons {
     display: flex;
 }
 
-.dot{
+.dot {
     font-size: 3em;
     letter-spacing: -0.07em;
     color: var(--title-color-light);
