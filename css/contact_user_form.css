@@ -1,0 +1,35 @@
+ .contact-user-form-banner {
+     /*  background-image: url(../img/contact-user-form_image_leopard.png);*/
+     background-color: black; /*while css in not ready*/
+     
+     background-size: cover;
+     background-position: left;
+
+ }
+
+ .contact-user-form-background div {
+     justify-content: right;
+    /* text-align: left;*/
+ }
+
+
+
+ .contact-user-form__title {
+     color: #F1C324;
+     font-size: 32px;
+ }
+
+ .contact-user-form__dots {
+     font-size: 3em;
+     letter-spacing: -0.07em;
+     color: var(--title-color-light);
+     font-family: 'Robotobold', sans-serif;
+     display: flex;
+     /* justify-content: center;*/
+     margin-bottom: 30px;
+ }
+
+ .contact-user-form__text {
+     color: #6E6E6E;
+     font-size: 19px;
+ }
