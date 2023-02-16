@@ -1,9 +1,9 @@
-/* .container {
+.container {
     max-width: 1200px;
     margin: auto;
-} */
+}
 
-.team__list {
+/* .team__list {
     padding-top: 10px;
     padding-bottom: 115px;
     display: block;
@@ -15,7 +15,7 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-}
+} */
 
 .team__title {
     text-transform: none;
@@ -36,7 +36,7 @@
     bottom: 0;
 } */
 
-.team__dots {
+/* .team__dots {
     text-align: center;
     padding-bottom: 30px;
 }
@@ -67,7 +67,7 @@
     margin-right: -15px;
     flex-wrap: wrap;
     gap: 20px;
-}
+} */
 
 .carousel__member-name {
     font-family: 'Dosis', sans-serif;
