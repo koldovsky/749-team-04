@@ -3,19 +3,20 @@
     margin: auto;
 }
 
-/* .team__list {
+ .team__list {
     padding-top: 10px;
     padding-bottom: 115px;
     display: block;
     position: relative;
 }
 
+
 .team__list-header {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-} */
+}
 
 .team__title {
     text-transform: none;
