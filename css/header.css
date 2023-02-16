@@ -44,13 +44,11 @@
 .header__general_name,
 .header__email {
   display: none;
-
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   margin: -5px -10px 0 -10px;
   align-items: baseline;
-
 }
 
 .header__logo-leopard {
@@ -110,12 +108,9 @@
 
 }
 
-.dropdown-menu a {
-  float: none;
-  color: black;
-  padding-left: 35px;
+.tour-dropdown-menu a {
+  color: white;
   text-decoration: none;
-  margin-top: -30px;
   display: flex;
   justify-content: center;
 }
@@ -133,39 +128,109 @@
   color: rgb(160, 132, 60);
 }
 
-.show{
-  position: fixed;
-    left: 0;
-    top: 0;
-    background-color: black;
-    display: block;
-    width: 100%;
-}
 
 .navbar-toggler{
   z-index: 2;
   position: absolute;
-  right: 30px;
-  margin-top: 80px;
+  right: 40px;
+  margin-top: 40px;
+  transform: translate(-50%, -50%);
+  width: 24px;
 }
 
-.navbar-collapse{
-  height: 100vh;
+.nav-list-item-link{
+  text-decoration: none;
 }
 
-.container-fluid{
-  display: inherit;
+.navbar-toggler:before,
+.navbar-toggler:after,
+.navbar-toggler div {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 3px;
+  border-radius: 3px;
+  margin: 4px 0;
+  transition: 0.5s;
+}
+.navbar-toggler:hover:before {
+  transform: translateY(7px) rotate(135deg);
+}
+.navbar-toggler:hover:after {
+  transform: translateY(-7px) rotate(-135deg);
+}
+.navbar-toggler:hover div {
+  transform: scale(0);
 }
 
-li.nav-item.dropdown{
+.header_nav{
+  display: none;
+}
+
+.nav-display{
+    display: flex;
+    background: black;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.navbar-nav-list{
+  width: 100%;
+  display: grid;
   align-items: center;
+  justify-items: center;
+  margin-top: 150px;
+  height: fit-content;
+  padding: 0;
+  line-height: 3em;
 }
 
-ul.navbar-nav.me-auto.mb-2.mb-lg-0{
-  padding-top: 60px;
-  align-items: center;
+.nav-list-item{
+  color: var(--text-color);
+  width: fit-content;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: auto 10px auto 10px;
+  display: flex;
 }
 
+#tour_list_button{
+  display: flex;
+  height: 9px;
+  width: 9px;
+  align-self: center;
+  margin-left: 8px;
+}    
+
+.tour-dropdown-menu{
+  display: none;
+  position: relative;
+  height: fit-content;
+  background-color: black;
+  color: white;
+  width: 0;
+  padding: 0;
+  list-style: none;
+  left: 0;
+  }
+
+  .list-item-tour-wrapper{
+    display: flex;
+  }
+
+  #nav-list-item-tour{
+    display: grid;
+  }
+
+  .tour-dropdown-menu > li{
+    font-weight: 500;
+    font-size: 0.9em;
+    line-height: 2.5em;
+  }
 
 @media (min-width: 992px) {
 
@@ -186,14 +251,6 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0{
     line-height: 132px;
   }
 
-  .show{
-    position: relative;
-    left: inherit;
-    top: inherit;
-    padding: 10px;
-    background-color: white;
-  }
-
   .dropdown-toggle{
     padding: 0;
     width: fit-content;
@@ -201,9 +258,8 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0{
     display: block;
   }
 
-  li.nav-item.dropdown{
+  li.nav-item.dropdown-menu{
     width: 75px;
-    /* text-align: end; */
     align-items: center;
   }
 
@@ -229,18 +285,72 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0{
     padding-bottom: 10px;
   }
 
-  .container-fluid{
-    display: none;
-  }
-
   .header__logo-leopard {
-    margin: 0;
+    margin: 0 0 0 30px;
     padding: 0;
     border: 0;
     width: 113px;
     justify-content: inherit;
     position: relative;
   }
+
+  .navbar-toggler{
+    display: none;
+    height: 0;
+  }
+
+  .navbar-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-nav-list{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px 0 0 0;
+  }
+
+  .navbar-toggler{
+    margin: 10px 15px 10px 15px;
+  }
+
+  .nav-list-item{
+    margin: 10px 15px 10px 15px;
+  }
+
+  .header_nav{
+    display: flex;
+  }
+
+  .tour-dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: #5A5D61;
+    max-width: 40em;
+    padding: 1em 1.6em;
+    border-radius: 3px;
+    top: 205px;
+    left: 35%;
+    height: fit-content;
+  }
+
+  .tour-dropdown-menu > li{
+    height: fit-content;
+    padding: 5px;
+    line-height: 1em;
+  }
+
+  .tour-dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -252,9 +362,9 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0{
 
 }
 
-
 @media (min-width: 432px) {
   .header__big-bottom {
     width: auto;
   }
+
 }
