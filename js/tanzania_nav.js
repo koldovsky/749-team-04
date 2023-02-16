@@ -10,11 +10,6 @@
         document.body.style.overflow = "visible";
     }
 
-  
-        
-
-
-
     function drop_tour_list_nav(){
         document.getElementById("tour_list_nav").style.visibility = "visible";
         document.getElementById("tour_list_nav").style.height = "auto";
