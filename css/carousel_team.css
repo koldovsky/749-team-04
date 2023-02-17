@@ -4,14 +4,14 @@
 }
 
 .team__list {
-  background-color: rgb(246, 248, 250);
+  background-color: var(--carousel-team-bg-c);
   padding-top: 10px;
   padding-bottom: 115px;
   display: block;
   position: relative;
 }
 
-.team__list-header {
+.team__header {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -27,7 +27,7 @@
     margin-top: -500px;
     font-size: 5em;
     letter-spacing: -0.07em;
-    color: #24b8f1;
+    color: var(--brand-color);
     font-family: 'Robotobold', sans-serif;
     line-height: 0;
 }
