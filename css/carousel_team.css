@@ -4,6 +4,7 @@
 }
 
  .team__list {
+    background-color: rgb(246, 248, 250);
     padding-top: 10px;
     padding-bottom: 115px;
     display: block;
