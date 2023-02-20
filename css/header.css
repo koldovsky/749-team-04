@@ -128,7 +128,7 @@
 }
 
 
-.navbar-toggler{
+#toggler{
   z-index: 2;
   position: absolute;
   right: 40px;
@@ -139,27 +139,6 @@
 
 .nav-list-item-link{
   text-decoration: none;
-}
-
-.navbar-toggler:before,
-.navbar-toggler:after,
-.navbar-toggler div {
-  background: #fff;
-  content: "";
-  display: block;
-  height: 3px;
-  border-radius: 3px;
-  margin: 4px 0;
-  transition: 0.5s;
-}
-.navbar-toggler:hover:before {
-  transform: translateY(7px) rotate(135deg);
-}
-.navbar-toggler:hover:after {
-  transform: translateY(-7px) rotate(-135deg);
-}
-.navbar-toggler:hover div {
-  transform: scale(0);
 }
 
 .header_nav{
