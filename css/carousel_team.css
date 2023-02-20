@@ -1,27 +1,35 @@
 .container {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
- .team__list {
-    background-color: rgb(246, 248, 250);
-    padding-top: 10px;
-    padding-bottom: 115px;
-    display: block;
-    position: relative;
+.team__list {
+  background-color: var(--carousel-team-bg-c);
+  padding-top: 10px;
+  padding-bottom: 115px;
+  display: block;
+  position: relative;
 }
 
-
-.team__list-header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+.team__header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 .team__title {
-    text-transform: none;
-    text-align: center;
+  text-transform: none;
+  text-align: center;
+}
+
+.ready_bottom {
+    margin-top: -500px;
+    font-size: 5em;
+    letter-spacing: -0.07em;
+    color: var(--brand-color);
+    font-family: 'Robotobold', sans-serif;
+    line-height: 0;
 }
 
 /* не виходить так: не прикріпляється унизу team__title
@@ -71,21 +79,21 @@
 } */
 
 .carousel__member-name {
-    font-family: 'Dosis', sans-serif;
-    font-size: 23px;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
 }
 
 .carousel__member_job {
-    font-family: 'Dosis', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .carousel__social-logos {
-    justify-content: center;
-    text-align: center;
+  justify-content: center;
+  text-align: center;
 }
