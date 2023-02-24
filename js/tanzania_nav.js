@@ -36,6 +36,10 @@
         if(myMediaQueryNav.matches) {
             document.querySelector("#nav_icon_tanzania_close").addEventListener("click", close_nav);
             document.querySelector("#icon_tanzania_nav").addEventListener("click", drop_nav);
+         }else{
+            document.querySelector("#nav__tanzania").style.visibility = "hidden";
+            document.querySelector("#tour_list_nav").style.visibility = "hidden";
+            document.body.style.overflow = "visible";
          }
       }
     

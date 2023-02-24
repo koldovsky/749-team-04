@@ -38,11 +38,14 @@ function widthChangeMainNav(myMediaQueryMainNav) {
     if(myMediaQueryMainNav.matches) {
         document.querySelector("#navbarContent").classList.remove("nav-display");
         document.querySelector("#navbarContent").classList.add("header_nav");
+        document.querySelector("#tour-dropdown-menu").style.display= "none";
+        document.querySelector("#tour-dropdown-menu").style.width = "0";
+        
      }
   }
 
  
-  myMediaQueryMainNav.addEventListener("resize", widthChangeMainNav);
+  myMediaQueryMainNav.addEventListener("change", widthChangeMainNav);
   widthChangeMainNav(myMediaQueryMainNav);
 
 })()
