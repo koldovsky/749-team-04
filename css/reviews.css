@@ -78,6 +78,31 @@
     height: 250px;
 }
 
+.reviews__slide{
+    margin-bottom: 50px;
+}
+
+.click-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .click-dot {
+    width: 20px;
+    height: 20px;
+    background: var(--text-color-on-dark);
+    border-radius: 50%;
+    margin: 0 9px;
+    cursor: pointer;
+  }
+
+  .active-dot {
+    background: var(--active-dot-color);
+    cursor: default;
+  }
+
 @media(min-width: 768px){
     .reviews-mobile-style{
         display: none;
