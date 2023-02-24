@@ -87,6 +87,7 @@
   text-align: center;
 }
 
+
 @media (max-width: 800px) {
   .card_my img {
     display: flex;
