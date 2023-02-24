@@ -1,11 +1,11 @@
 
-const img = document.querySelector('#img-container img');
+const img = document.querySelector('#additional-container-img');
 
 
-let opacity = 0.2;
+let opacity = 0.3;
 let direction = 'up';
 
-
+(() => { 
 setInterval(function () {
 
     if (direction === 'up') {
@@ -14,7 +14,7 @@ setInterval(function () {
             direction = 'down';
         }
     } else {
-        opacity -= 0.01;
+        opacity -= 0.02;
         if (opacity <= 0.2) {
             direction = 'up';
         }
@@ -22,4 +22,5 @@ setInterval(function () {
 
 
     img.style.opacity = opacity;
-}, 10);
+}, 60);
+})();
