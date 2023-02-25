@@ -5,7 +5,8 @@
         '<img class="reviews__image" src="img/in-car.jfif" alt="In car"></img>'
     ];
 
-    const textSlides = [
+    const textSlides = document.querySelectorAll(".reviews__slide");
+    /*[
         `<p class="reviews-text">
             I recommend a tour to Rwanda. It is perhaps better not to go to this country without a
             reliable guide. With Mango Tours, we felt completely safe, and we want to go there again, with
@@ -27,9 +28,10 @@
             worth it!
         </p>
         <h3 class="reviews__name">Cole Holmes</h3>`
-    ]
+    ]*/
 
     let currentSlide = 0;
+    let prevSlide = textSlides.length - 1;
 
     const dots = document.querySelector('.click-dots');
 
@@ -43,9 +45,25 @@
     const allDots = document.querySelectorAll(".click-dot");
     allDots[0].classList.add("active-dot");
 
-    function renderSlides(textSlides){
-        const slideConteiner = document.querySelector(".reviews__slide");
-        slideConteiner.innerHTML = textSlides[currentSlide];
+    textSlides[0].style.left = "0";
+
+    function renderSlides(numSlide){
+        //const slideConteiner = document.querySelector(".reviews__slide");
+        //slideConteiner.innerHTML = textSlides[currentSlide];
+
+        if (prevSlide===0) textSlides[prevSlide].style.left = "-100%";
+        textSlides[prevSlide].style.animationName = "";
+        if (numSlide > currentSlide){
+            textSlides[numSlide].style.animationName = "leftNext";
+            textSlides[currentSlide].style.animationName = "leftCurr";       
+        }
+        else {
+            textSlides[numSlide].style.animationName = "rightNext";
+            textSlides[currentSlide].style.animationName = "rightCurr";
+        }
+        
+        prevSlide = currentSlide;
+        currentSlide = numSlide;
     }
 
     function renderDot(numSlide){
@@ -64,13 +82,11 @@
         if (numSlide !== currentSlide){  
             renderDot(numSlide);
 
-            currentSlide = numSlide;
-            renderSlides(textSlides);  
+            renderSlides(numSlide);  
             renderImages(imgSlides);  
         } 
     }
 
-    renderSlides(textSlides);
     renderImages(imgSlides);  
     
     window.addEventListener('resize', () => {
