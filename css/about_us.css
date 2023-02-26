@@ -1,4 +1,7 @@
 .about_us__grouped {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -34,6 +37,8 @@
     text-decoration-line: none;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+
     /*vertical-align: middle;*/
     /*left: 0px;*/
     /*line-height: 12px;*/
@@ -47,6 +52,9 @@
 
 .about_us__container {
     max-width: 992px;
+}
+.about_us__zebra_image {
+    min-width: 325px;
 }
 .about_us__dots {
     color: #24b8f1;
