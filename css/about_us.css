@@ -1,22 +1,20 @@
 .about_us__grouped {
-    max-width: 1200px;
     margin: 0 auto;
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 50px;
-    background-color: white;
+    background-color: var(--background-color-about_us-field);
     display: flex;
     flex-direction: column;
-    /*height: 800px;*/
 }
 .about_us__title {
     font-family: 'Dosis', sans-serif;
-    color: rgb(20, 20, 20);
+    color: var(--text-color-about_us-title);
     font-size: 34px;
 }
 .about_us__text {
-    color: rgb(110, 110, 110);
+    color: var( --text-color-about_us-description);
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
@@ -27,12 +25,12 @@
     padding-right: 10px;
     width: 115.625px;
     height: 50px;
-    background-color: rgb(36, 184, 241);
+    background-color: var(--background-color-about_us-button);
 }
 .about_us__link {
     text-align: center;
     font-size: 12px;
-    color: rgb(255, 255, 255);
+    color: var(--button-link-text-color);
     text-decoration-line: none;
     text-transform: uppercase;
     cursor: pointer;
@@ -59,7 +57,7 @@
     /*min-width: 325px;*/
 }
 .about_us__dots {
-    color: #24b8f1;
+    color: var(--brand-color);
     font-size: 30px;
     font-family: 'Roboto', cursive;
 }
