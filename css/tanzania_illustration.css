@@ -1,0 +1,138 @@
+.illustration{
+    background-color: black;
+    padding: 70px 15px 70px 15px;
+}
+
+.illustration-header{
+    color: var(--header-text-color);
+    font-family: var(--header-font), sans-serif;
+    text-align: center;
+    font-size: 2.3em;
+    line-height: 1em;
+}
+
+.illustration-wrapper{
+    width: 100%;
+    margin-top: 45px;
+    position: relative;
+    overflow: hidden;
+    max-height: 315px;
+}
+
+.illustration-picture li{
+    display: inline-flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.illustration-picture li img{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+    max-height: 316px;
+}
+
+.illustration-picture{
+    position: relative;
+    display: inline-flex;
+    width: 900%;
+    margin-left: 0;
+    transition: margin-left 250ms;
+}
+
+.next {
+    right: -10px;
+    border-radius: 50% 50% 50% 50%;
+  }
+
+.prev {
+    left: -10px;
+    border-radius: 50% 50% 50% 50%;
+  }
+
+.prev, .next {
+    line-height: 2;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 26px;
+    height: 26px;
+    color: #272020d1;
+    font-size: 12px;
+    transition: 0.6s ease;
+    border-radius: 50% 50% 50% 50%;
+    background-color: rgba(185, 152, 31, 0.8);
+}
+
+@media (min-width: 470px) {
+    .illustration-picture{
+        width: 450%;
+    }
+
+    .illustration-picture li{
+        width: 50%;
+    }
+
+    .illustration-picture img{
+        padding-left: 5px;
+        padding-right: 5px;
+        min-height: 165px;
+        max-height: 265px;
+        display: inline-flex;
+    }
+
+    .illustration-wrapper{
+        min-height: 165px;
+        max-height: 265px;
+    }
+}
+
+@media (min-width: 770px) {
+    .illustration-header{
+        font-size: 2.8em;
+        line-height: 1em;
+    }
+
+    .illustration-picture{
+        width: 300%;
+    }
+
+    .illustration-picture li{
+        width: 33.333%;
+    }
+
+    .illustration-picture img{
+        min-height: 180px;
+        max-height: 220px;
+    }
+
+    .illustration-wrapper{
+        min-height: 180px;
+        max-height: 220px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .illustration-picture{
+        width: 180%;
+        height: 150px;
+    }
+
+    .illustration-picture li{
+        width: 20%;
+    }
+
+    .illustration-picture img{
+        min-height: 125px;
+        max-height: 155px;
+    }
+
+    .illustration-wrapper{
+        min-height: 125px;
+        max-height: 155px;
+    }
+
+}
