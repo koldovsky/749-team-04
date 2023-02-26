@@ -15,9 +15,9 @@
 }
 .about_us__text {
     color: rgb(110, 110, 110);
-    font-weight: 34px;
+    font-weight: 400;
     font-family: 'Roboto', sans-serif;
-    font-size: 17;
+    font-size: 17px;
 }
 
 .about_us__button {
