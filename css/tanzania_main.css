@@ -30,4 +30,10 @@
         justify-content: space-between;
         padding: 60px 24px 60px 24px;
     }
+
+    .tanzania-tour-description-question-answer-wrapper{
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
