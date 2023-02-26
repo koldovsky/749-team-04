@@ -22,21 +22,22 @@
 .illustration-picture li{
     display: inline-flex;
     width: 100%;
+    overflow: hidden;
 }
 
 
 .illustration-picture li img{
     padding-left: 15px;
     padding-right: 15px;
-    height: auto;
     display: block;
-    max-height: 315px;
+    max-height: 316px;
 }
 
 .illustration-picture{
     position: relative;
     display: inline-flex;
     width: 900%;
+    margin-left: 0;
     transition: margin-left 250ms;
 }
 
@@ -100,7 +101,7 @@
     }
 
     .illustration-picture li{
-        width: 33.3%;
+        width: 33.333%;
     }
 
     .illustration-picture img{
