@@ -18,9 +18,7 @@
     background-color: var(--light-dark-bacground-color);
 }
 
-.contacts__left{
-   /* padding: 50px 80px 50px 80px; */
-}
+
 
 .contacts__workinghours, .contacts__info, .contacts__address{
     display: flex;
