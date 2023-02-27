@@ -1,3 +1,5 @@
+(function(){
+
 let slideIndex = 1;
 const myMediaQuery = window.matchMedia("(min-width: 500px)");
 const slides = document.querySelectorAll(".tour-card"); 
@@ -51,7 +53,7 @@ function showSlidesMob(n) {
   widthChangeCallback(myMediaQuery);
   myMediaQuery.addEventListener("change",widthChangeCallback);
 
-
+})()
 
 
 
