@@ -9,13 +9,13 @@
 
 .contacts__text{
     margin-top: 24px;
-    color: rgb(255,255,255);
+    color: var(--title-color-light);
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
 
 .contacts__wrapper{
-    background-color: rgba(255, 255, 255, 0.09);
+    background-color: var(--light-dark-bacground-color);
 }
 
 .contacts__left{
@@ -46,11 +46,11 @@
 }
 
 .contacts__content{
-    color: rgb(110,110,110);
+    color: var(--text-color-on-dark);
 }
 
 .contacts__subtitle, .contacts__title{
-    color: rgb(241,195,36);
+    color: var(--title-color-on-dark);
 }
 
 .contacts__subtitle{

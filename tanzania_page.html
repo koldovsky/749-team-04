@@ -69,25 +69,27 @@
     </header>
     <main>    
         <div class="tanzania-tour-description-question-answer">
-            <div class="tour-description-question-answer">
-                <span class="tour-description-question">When?</span>
-                <span class="tour-description-answer">9 Nov 2019</span>
-            </div>
-            <div class="tour-description-question-answer">
-                <span class="tour-description-question">Duration</span>
-                <span class="tour-description-answer">5 days</span>
-            </div>
-            <div class="tour-description-question-answer">
-                <span class="tour-description-question">Where to start?</span>
-                <span class="tour-description-answer">in Moshi</span>
-            </div>
-            <div class="tour-description-question-answer">
-                <span class="tour-description-question">Minimum age</span>
-                <span class="tour-description-answer">10+</span>
-            </div>
-            <div class="tour-description-question-answer">
-                <span class="tour-description-question">People in group</span>
-                <span class="tour-description-answer">25-40</span>
+            <div class="tanzania-tour-description-question-answer-wrapper container">
+                <div class="tour-description-question-answer">
+                    <span class="tour-description-question">When?</span>
+                    <span class="tour-description-answer">9 Nov 2019</span>
+                </div>
+                <div class="tour-description-question-answer">
+                    <span class="tour-description-question">Duration</span>
+                    <span class="tour-description-answer">5 days</span>
+                </div>
+                <div class="tour-description-question-answer">
+                    <span class="tour-description-question">Where to start?</span>
+                    <span class="tour-description-answer">in Moshi</span>
+                </div>
+                <div class="tour-description-question-answer">
+                    <span class="tour-description-question">Minimum age</span>
+                    <span class="tour-description-answer">10+</span>
+                </div>
+                <div class="tour-description-question-answer">
+                    <span class="tour-description-question">People in group</span>
+                    <span class="tour-description-answer">25-40</span>
+                </div>
             </div>
         </div>
         <section class="tanzania-itinerary">
@@ -226,64 +228,81 @@
                 </ul>
             </div>
         </div>
-        <p class="illustration-header">They Can't Wait to Meet You:</p>
-        <span class="dot">....</span>
-        <div class="illustration-picture container">
-            <img src="img/illustration/illustration-giraffe.jpg" alt="photo of animals" width="300">
-            <img src="img/illustration/illustration-lion.jpg" alt="photo of animals" width="300">
-            <img src="img/illustration/illustration-zebra.jpg" alt="photo of animals" width="300">
-            <img src="img/illustration/illustration-roe.jpg" alt="photo of animals" width="300">
-            <img src="img/illustration/illustration-elephant.jpg" alt="photo of animals" width="300">
-            <img src="img/illustration/illustration-monkey.jpg" alt="photo of animals" width="300">
-            <img src="img/illustration/illustration-giraffe-field.jpg" alt="photo of animals" width="300">
-            <img src="img/illustration/illustration-zebra-field.jpg" alt="photo of animals" width="300">
-            <img src="img/illustration/illustration-lion-eyes.jpg" alt="photo of animals" width="300">
-        
+        <div class="illustration">
+            <p class="illustration-header">They Can't Wait to Meet You:</p>
+            <span class="dot">....</span>
+            <div class="illustration-wrapper container">
+                <ul class="illustration-picture">
+                    <li class="illustration-list-item"><img src="img/illustration/illustration-giraffe.jpg" alt="photo of animals" width="300"></li>
+                    <li class="illustration-list-item"><img src="img/illustration/illustration-lion.jpg" alt="photo of animals" width="300"></li> 
+                    <li class="illustration-list-item"><img src="img/illustration/illustration-zebra.jpg" alt="photo of animals" width="300"></li>
+                    <li class="illustration-list-item"><img src="img/illustration/illustration-roe.jpg" alt="photo of animals" width="300"></li>
+                    <li class="illustration-list-item"><img src="img/illustration/illustration-elephant.jpg" alt="photo of animals" width="300"></li>
+                    <li class="illustration-list-item"><img src="img/illustration/illustration-monkey.jpg" alt="photo of animals" width="300"></li>
+                    <li class="illustration-list-item"><img src="img/illustration/illustration-giraffe-field.jpg" alt="photo of animals" width="300"></li> 
+                    <li class="illustration-list-item"><img src="img/illustration/illustration-zebra-field.jpg" alt="photo of animals" width="300"></li>
+                    <li class="illustration-list-item"><img src="img/illustration/illustration-lion-eyes.jpg" alt="photo of animals" width="300"></li>
+                </ul>
+                <span class="prev" id="prev_bt_tan">&#10094;</span>
+                <span class="next" id="next_bt_tan">&#10095;</span>
+            </div>
         </div>
-        <div class="user-input">
-            <form>
-                <p class="user-input-header">Let's Ride!</p>
-                <span class="dot">....</span>
-                <p class="user-input-text">Hurry to join us in our safari trip around the most spectacular places in
-                    Tanzania!</p>
-                <input class="user-input-name" name="name" placeholder="Name" type="text" required>
-                <input class="user-input-phone" name="phone number" placeholder="Phone number" type="number" required>
-                <input class="user-input-email" name="email" placeholder="Email" type="email" required>
-                <input class="user-input-submit" type="submit" value="Submit">
-            </form>
+        <div class="contact-form">
+            <div class="contact-form-container container">
+                <div class="contact-form-img-wrapper">
+                    <img src = "img/contact_form_tanzania.jpg" alt="photo of a leopard">
+                </div>
+                <div class="form-container">
+                    <form>
+                        <p class="user-input-header">Let's Ride!</p>
+                        <span class="dot" id="form-dot">....</span>
+                        <p class="user-input-text">Hurry to join us in our safari trip around the most spectacular places in
+                            Tanzania!</p>
+                        <input class="user-input-name" name="name" placeholder="Name" type="text" required>
+                        <input class="user-input-phone" name="phone number" placeholder="Phone number" type="number" required>
+                        <input class="user-input-email" name="email" placeholder="Email" type="email" required>
+                        <input class="user-input-submit" type="submit" value="SEND">
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="footer">
-        <div class="container">
-            <a class="tanzania-contacts-logo" href="index.html">
-                <img src="img/logo_leopard.png" alt="mango travel logo">
-            </a>
-            <div class="footer__menu-1">
-                <a href="index.html#our_tours">Tours</a>
-                <a href="index.html#services">Services</a>
-                <a href="index.html#team">Our team</a>
+        <div class="footer_container container">
+            <div class="footer-wrapper">
+                <a class="tanzania-footder-logo" href="index.html">
+                    <img src="img/logo_leopard.png" alt="mango travel logo">
+                </a>
+                <div class="footer__menu">
+                    <a href="index.html#our_tours">Tours</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="index.html#team">Our team</a>
+                </div>
+                <div class="footer__menu">
+                    <a href="index.html#about_us">About</a>
+                    <a href="index.html#contacts">Contact</a>
+                    <a href="index.html#testimonials">Testimonials</a>
+                </div>
+                <div class="footer_follow_us">
+                    <p>Follow Us</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="img/logo-facebook.png" width="80"
+                            alt="fb-logo"></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><img src="img/logo-insta.png" width="80"
+                            alt="inst-logo"></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><img src="img/logo-youtube.png" width="80"
+                            alt="youtube-logo"></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer__menu-2">
-                <a href="index.html#about_us">About</a>
-                <a href="index.html#contacts">Contact</a>
-                <a href="index.html#testimonials">Testimonials</a>
-            </div>
-            <div>
-                <p>Follow Us</p>
-                <a href="https://www.facebook.com/" target="_blank"><img src="img/logo-facebook.png" width="80"
-                        alt="fb-logo"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="img/logo-insta.png" width="80"
-                        alt="inst-logo"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img src="img/logo-youtube.png" width="80"
-                        alt="youtube-logo"></a>
-            </div>
-            <div>
+            <div class="footer_rights">
                 <p>© Created by </p>
                 <p>All rights Reserved</p>
             </div>
         </div>
     </footer>
     <script src="js/tanzania_nav.js"></script>
+    <script src="js/tanzania_slider_illustration.js"></script>
 </body>
 
 </html>

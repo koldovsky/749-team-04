@@ -1,26 +1,15 @@
-var slideIndex = 1;
-let myMediaQuery = window.matchMedia('(min-width: 500px)');
+(function(){
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+let slideIndex = 1;
+const myMediaQuery = window.matchMedia("(min-width: 500px)");
+const slides = document.querySelectorAll(".tour-card"); 
 
-function currentSlide(n) {
-  showSlides(slideIndex += n);
-}
-
-function plusSlideMob(n) {
-  showSlidesMob(slideIndex += n);
-}
-
-function currentSlideMob(n) {
+function changeSlideMob(n) {
   showSlidesMob(slideIndex += n);
 }
 
 function showSlidesMob(n) {
-
-  var i;
-  var slides = document.getElementsByClassName('tour-card');
+  let i;
     if (n > slides.length) {slideIndex = slides.length}
     if (n < 1) {slideIndex = 1}
     for (i = 0; i < slides.length; i++) {
@@ -30,9 +19,12 @@ function showSlidesMob(n) {
     
   }
   
+  function changeSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
   function showSlides(n){
-    var i;
-    var slides = document.getElementsByClassName('tour-card');
+    let i;
     if (n > slides.length-2) {slideIndex = slides.length-2}
     if (n < 1) {slideIndex = 1}
     for (i = 0; i < slides.length; i++) {
@@ -48,20 +40,20 @@ function showSlidesMob(n) {
   function widthChangeCallback(myMediaQuery) {
     if(myMediaQuery.matches) {
       showSlides(slideIndex); 
-      document.getElementById("next_bt").onclick = function(){plusSlides(1);}
-      document.getElementById("prev_bt").onclick = function(){currentSlide(-1);}
+      document.querySelector("#next_bt").onclick = function(){changeSlides(1);}
+      document.querySelector("#prev_bt").onclick = function(){changeSlides(-1);}
       
      } else {
       showSlidesMob(slideIndex);
-      document.getElementById("next_bt").onclick = function(){plusSlideMob(1);}
-      document.getElementById("prev_bt").onclick = function(){currentSlideMob(-1);}
+      document.querySelector("#next_bt").onclick = function(){changeSlideMob(1);}
+      document.querySelector("#prev_bt").onclick = function(){changeSlideMob(-1);}
      }
   }
 
   widthChangeCallback(myMediaQuery);
-  myMediaQuery.addEventListener('change',widthChangeCallback);
+  myMediaQuery.addEventListener("change",widthChangeCallback);
 
-
+})()
 
 
 

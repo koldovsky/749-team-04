@@ -1,0 +1,113 @@
+.footer{
+    background-color:var(--bg-color);
+    display: grid;
+    padding: 74px 24px 25px 24px;
+}
+
+.footer_container{
+    display: grid;
+}
+
+.footer_follow_us a img{
+    width: 36px;
+    height: 36px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tanzania-contacts-logo img{
+    margin: auto;
+}
+
+.footer__menu{
+    display: grid;
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.footer__menu a{
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 10px 5px 10px 5px;
+}
+
+.footer_follow_us{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.footer_follow_us p{
+    margin-bottom: 30px;
+}
+
+.footer_follow_us ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_rights{
+    text-align: center;
+}
+
+.footer_rights p{
+    margin-top: 20px;
+}
+
+.tanzania-footder-logo{
+    width: 115px;
+}
+
+@media (min-width: 770px) {
+    .footer_container{
+        display: block;
+    }
+
+    .footer-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_rights p{
+        display: flex;
+    }
+
+    .footer{
+        display: block;
+    }
+
+    .footer__menu{
+       width: 25%;
+       text-align: start;
+    }
+
+    .tanzania-footder-logo{
+        align-items: center;
+        display: flex;
+        width: 25%;
+    }
+
+    .tanzania-footder-logo img{
+        width: 115px;
+    }
+
+    .footer_follow_us{
+        width: 25%;
+        text-align: end;
+    }
+
+    .footer_follow_us ul{
+        justify-content: end;
+    }
+
+    .footer_rights{
+        display: flex;
+        justify-content: space-between;
+    }
+}
