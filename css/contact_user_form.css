@@ -1,35 +1,64 @@
  .contact-user-form-banner {
-     /*  background-image: url(../img/contact-user-form_image_leopard.png);*/
-     background-color: black; /*while css in not ready*/
+     background-color: black; 
      
-     background-size: cover;
-     background-position: left;
-
  }
+ .contact-user-form-banner form{
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.09);
+}
 
- .contact-user-form-background div {
-     justify-content: right;
-    /* text-align: left;*/
- }
-
-
-
- .contact-user-form__title {
-     color: #F1C324;
-     font-size: 32px;
+ .contact-user-form__title{
+    color: #F1C324;
+    font-size: 32px;
+   /* font-family: var(--header-font), sans-serif;*/
+    text-align: center;
+    line-height: 1em;
+    align-self: center;
  }
 
  .contact-user-form__dots {
-     font-size: 3em;
-     letter-spacing: -0.07em;
-     color: var(--title-color-light);
-     font-family: 'Robotobold', sans-serif;
-     display: flex;
-     /* justify-content: center;*/
-     margin-bottom: 30px;
- }
+    font-size: 3em;
+    letter-spacing: -0.07em;
+    color: var(--title-color-light);
+    font-family: 'Robotobold', sans-serif;
+    display: flex;
+}
+.contact-user-form-input-name,
+.contact-user-form-input-phonenumber,
+.contact-user-form-input-email {
+    margin-bottom: 24px;
+    padding: 19px 21px 19px 21px;
+    font-size: 0.6em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+}
 
- .contact-user-form__text {
-     color: #6E6E6E;
-     font-size: 19px;
- }
+.contact-user-form-input-send{
+    margin-bottom: 24px;
+    padding: 19px 21px 19px 21px;
+    font-size: 0.6em;
+    background-color: #F1C324;;
+    color: #FFF;
+    border: none;
+}
+.contact-user-form__text {
+    color: #6E6E6E;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.contact-user-form__background-image{
+    height: 775px;
+    width: 100%;
+   }
+  
+
+
+   
+
+ .
+
+ 
+
