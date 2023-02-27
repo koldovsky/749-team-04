@@ -1,17 +1,15 @@
 .additional {
-  font-family: Dosis, sans-serif;
+  font-family: 'Dosis', sans-serif;
 }
 
 .additional {
   background-image: url(../img/backgroundAdditional.png);
-  /* height: 634.734px; */
-
   object-fit: cover;
   min-height: 740px;
   width: 100%;
   height: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-bottom: 150px;
 }
 
@@ -25,47 +23,40 @@
 .additional__header__main_title {
   font-size: 48px;
   font-weight: 700;
-
 }
 
 .card-body h2 {
+  font-size: 25px;
   text-align: left;
 }
 
 .card_my {
-  padding-left: 60px;
   border: none;
 }
-/* 
 
 .additional img {
   height: 208px;
-  width: 323px;
-
-} */
+}
 
 .title {
   font-weight: 600;
-
 }
 
 .additional p {
-  font-family: Roboto;
-  font-size: 20px;
-  padding-top: 20px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  opacity: 0.7;
   line-height: 30px;
-  /* width: 323px; */
   color: var(--dark-fon-color);
 }
 
 .additional h2 {
-  padding-top: 30px;
   color: var(--dark-fon-color);
 }
 
 .bottom {
-  margin-top: -60px;
-  font-size: 1.5em;
+  margin-top: -40px;
+  font-size: 1em;
   letter-spacing: -0.07em;
   color: var(--brand-color);
   font-family: 'Robotobold', sans-serif;
@@ -81,21 +72,20 @@
   min-height: 2em;
   margin-left: auto;
   margin-right: 0;
-  margin-bottom: -10px;
+  margin-top: 30px;
+  margin-bottom: -100px;
   border: 1px solid var(--title-color-on-dark);
-  background:  var(--aditional-color-clock);
+  background: var(--aditional-color-clock);
   text-align: center;
 }
 
 
 @media (max-width: 768px) {
-  
   .card_my img {
     display: flex;
     height: 300px;
     width: 100%;
-    padding-left: 5px;
-    margin-left: -30px;
+    margin-left: -10px;
   }
 
   .card_my p,
@@ -103,16 +93,17 @@
     display: flex;
     width: 50%;
     padding-left: 5px;
-    margin-left: -30px;
+    margin-left: -10px;
   }
 }
+
 @media (max-width: 1024px) {
   .card_my img {
     display: flex;
     height: 300px;
     width: 100%;
     padding-left: 5px;
-    margin-left: -30px;
+    margin-left: -10px;
   }
 
   .card_my p,
@@ -120,7 +111,7 @@
     display: flex;
     width: 100%;
     padding-left: 5px;
-    margin-left: -30px;
+    margin-left: -10px;
   }
 }
 
@@ -130,8 +121,6 @@
     height: 300px;
     width: 100%;
     padding-left: 15px;
-    margin-left: -30px;
-
   }
 
   .card_my p,
@@ -139,7 +128,5 @@
     display: flex;
     width: 100%;
     padding-left: 15px;
-    margin-left: -30px;
   }
 }
-
