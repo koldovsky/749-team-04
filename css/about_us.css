@@ -1,9 +1,6 @@
 .about_us__grouped {
     margin: 0 auto;
     padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 50px;
     background-color: var(--background-color-about_us-field);
     display: flex;
     flex-direction: column;
@@ -50,14 +47,19 @@
 .about_us__container {
     flex: 1;
     max-width: 992px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
 }
 
 .about_us__zebra_image {
     flex: 2;
-    /*min-width: 325px;*/
 }
 .about_us__dots {
+    margin-top: -40px;
+    font-size: 3em;
+    letter-spacing: -0.07em;
     color: var(--brand-color);
-    font-size: 30px;
-    font-family: 'Roboto', cursive;
+    font-family: 'Robotobold', sans-serif;
+    display: flex;
 }
