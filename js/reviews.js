@@ -6,33 +6,12 @@
     ];
 
     const textSlides = document.querySelectorAll(".reviews__slide");
-    /*[
-        `<p class="reviews-text">
-            I recommend a tour to Rwanda. It is perhaps better not to go to this country without a
-            reliable guide. With Mango Tours, we felt completely safe, and we want to go there again, with
-            the kids.
-            Well thought-out stops along the way, excellent hotels. The guides are worth mentioning as a
-            separate point. Thanks for the wonderful experience!
-        </p>
-        <h3 class="reviews__name">Desmond Tills</h3>`,
-        `<p class="reviews-text">
-            This is the second time I'm going on a safari with Mango Tours. To anyone who doubts, I
-            REALLY recommend this active vacation! It is a completely different experience than regular
-            all-inclusive or sightseeing tours. Here you see the real Africa, in all its diversity.
-        </p>
-        <h3 class="reviews__name">Ann and Peter Reiss</h3>`,
-        `<p class="reviews-text">
-            This is a reliable travel company, the manager stays in touch throughout the trip.
-            Everything was perfectly planned, the trip was comfortable and left a lot of pleasant impressions.
-            We're thinking about the next safari trip with Mango Travel. Seeing lions and antelopes live - it's
-            worth it!
-        </p>
-        <h3 class="reviews__name">Cole Holmes</h3>`
-    ]*/
+    const textSlidesDesktop = document.querySelectorAll(".reviews__slide-desktop");
 
     let currentSlide = 0;
     let prevSlide = textSlides.length - 1;
-
+    let desktop = getDesktop();
+    
     const dots = document.querySelector('.click-dots');
 
     for(let i=0; i<textSlides.length; i++){
@@ -45,33 +24,59 @@
     const allDots = document.querySelectorAll(".click-dot");
     allDots[0].classList.add("active-dot");
 
-    textSlides[0].style.left = "0";
-    textSlides[1].style.display = "none";
-    textSlides[2].style.display = "none";
+    const dotsD = document.querySelector('.click-dots-desktop');
 
-    function renderSlides(numSlide){
-        textSlides[prevSlide].style.animationName = "";
-        for (let i=0; i<textSlides.length; i++){
-            textSlides[i].style.display = "none";  
+    for(let i=0; i<textSlidesDesktop.length; i++){
+        const dotD = document.createElement("div");
+        dotD.classList.add("click-dot-desktop");
+        dotsD.appendChild(dotD);
+        dotD.addEventListener("click",nextSlide.bind(null,i));
+    }
+
+    const allDotsD = document.querySelectorAll(".click-dot-desktop");
+    allDotsD[0].classList.add("active-dot");
+
+    setDesplayNone(textSlides);
+    textSlides[0].style.left = "0";
+    textSlides[0].style.display = "block";  
+ 
+    setDesplayNone(textSlidesDesktop);
+    textSlidesDesktop[0].style.left = "0";
+    textSlidesDesktop[0].style.display = "block";  
+
+    function getDesktop(){
+        return window.innerWidth>=768;
+    }
+
+    function setDesplayNone(slides){
+        for (let i=0; i<slides.length; i++){
+            slides[i].style.display = "none";    
         }
-        textSlides[numSlide].style.display = "block";   
+    }
+
+    function renderSlides(numSlide, slides){
+        slides[prevSlide].style.animationName = "";
+
+        setDesplayNone(slides);
+      
+        slides[numSlide].style.display = "block";   
         if (numSlide > currentSlide){
-            textSlides[numSlide].style.animationName = "leftNext";
-            textSlides[currentSlide].style.animationName = "leftCurr";    
+            slides[numSlide].style.animationName = "leftNext";
+            slides[currentSlide].style.animationName = "leftCurr";    
         }
         else {
-            textSlides[numSlide].style.animationName = "rightNext";
-            textSlides[currentSlide].style.animationName = "rightCurr";
+            slides[numSlide].style.animationName = "rightNext";
+            slides[currentSlide].style.animationName = "rightCurr";
         }
         
         prevSlide = currentSlide;
         currentSlide = numSlide;
     }
 
-    function renderDot(numSlide){
-        const currDot = allDots[numSlide];
+    function renderDot(numSlide, dots){
+        const currDot = dots[numSlide];
         currDot.classList.add("active-dot");
-        const prevDot = allDots[currentSlide];
+        const prevDot = dots[currentSlide];
         prevDot.classList.remove("active-dot");
     }
 
@@ -82,9 +87,12 @@
 
     function nextSlide(numSlide){
         if (numSlide !== currentSlide){  
-            renderDot(numSlide);
+            let slides = desktop ? textSlidesDesktop : textSlides;
+            let dots = desktop ? allDotsD : allDots;
 
-            renderSlides(numSlide);  
+            renderDot(numSlide, dots);
+
+            renderSlides(numSlide, slides);  
             setTimeout(renderImages,1000);  
         } 
     }
@@ -92,6 +100,21 @@
     renderImages();  
     
     window.addEventListener('resize', () => {
-        renderSlides(numSlide);
+        const curdesktop = getDesktop();
+        
+        let slides = curdesktop ? textSlidesDesktop : textSlides;
+        let dots = desktop ? allDotsD : allDots;
+
+        if (curdesktop !== desktop){
+            let currentSlide = 0;
+            let prevSlide = slides.length - 1;
+
+            desktop = curdesktop;
+        }
+        renderSlides(numSlide, slides);
+        dots[0].classList.add("active-dot");
+        for (let i=1; i<dots.length; i++){
+            dots[i].classList.remove("active-dot");
+        }
     });    
 })();
