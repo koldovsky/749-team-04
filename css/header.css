@@ -108,24 +108,12 @@
 }
 
 .tour-dropdown-menu a {
-  color: white;
+  color:var(--title-color-light);
   text-decoration: none;
   display: flex;
   justify-content: center;
 }
 
-.dropdown-toggle:hover {
-  color: rgb(160, 132, 60);
-
-}
-
-.nav-link:hover {
-  color: rgb(160, 132, 60);
-}
-
-.dropdown-menu a:hover {
-  color: rgb(160, 132, 60);
-}
 
 
 #toggler{
@@ -147,7 +135,7 @@
 
 .nav-display{
     display: flex;
-    background: black;
+    background: var(--dark-background-color);
     position: absolute;
     width: 100%;
     top: 0;
@@ -188,8 +176,8 @@
   display: none;
   position: relative;
   height: fit-content;
-  background-color: black;
-  color: white;
+  background-color: var(--dark-background-color);
+  color: var(--title-color-light);
   width: 0;
   padding: 0;
   list-style: none;
@@ -305,7 +293,7 @@
   .tour-dropdown-menu{
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: var(--title-color-light);
     color: #5A5D61;
     max-width: 40em;
     padding: 1em 1.6em;
@@ -322,7 +310,7 @@
   }
 
   .tour-dropdown-menu a {
-    color: black;
+    color: var(--dark-background-color);
     text-decoration: none;
     display: flex;
     justify-content: center;
