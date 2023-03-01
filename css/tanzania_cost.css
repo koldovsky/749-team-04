@@ -1,5 +1,5 @@
 .tour-cost-includes-excludes{
-    background-image: url(/img/cost_bg_tanzania.jpg);
+    background-image: url(../img/cost_bg_tanzania.jpg);
     padding: 70px 60px 70px 60px;
 }
 
@@ -24,12 +24,12 @@
 }
 
 .tour-cost-includes-list-item{
-    list-style: url('/img/tanzania/check-mark-svgrepo-com.svg');
+    list-style: url('../img/tanzania/check-mark-svgrepo-com.svg');
 }
 
 
 .tour-cost-excludes-list-item{
-    list-style: url('/img/tanzania/ban-svgrepo-com.svg');
+    list-style: url('../img/tanzania/ban-svgrepo-com.svg');
 }
 
 .tour-cost-includes-header,
