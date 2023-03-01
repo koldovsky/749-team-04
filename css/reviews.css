@@ -58,16 +58,16 @@
     display: none;
 }
 
-.reviews__customer-text-desktop {
+.reviews__customer-text-desktop{
     display: flex;
 }
 
 .reviews__article-desktop {
-    flex-direction: column;
+    /*flex-direction: column;*/
     padding-top: 55px;
-    padding-right: 65px;
+    /*padding-right: 65px;*/
     padding-bottom: 30px;
-    padding-left: 65px;
+    /*padding-left: 65px;*/
     background-color: var(--light-dark-bacground-color);
 }
 
@@ -81,8 +81,13 @@
     color: var(--title-color-light);
 }
 
-.reviews__image-desktop {
+.reviews__image-slide-desktop {
+    display: flex;
     max-width: 50%;
+}
+
+.reviews__image-desktop {
+    /*max-width: 50%;*/
     min-height: 250px;
     flex-basis: 50%;
     object-fit: cover;
