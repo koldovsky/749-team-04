@@ -1,10 +1,16 @@
 (function () {
     const imgSlides = [
-        '<img class="reviews__image" src="img/photographer.jfif" alt="Photographer"></img>',
-        '<img class="reviews__image" src="img/elefant.jfif" alt="Elefant"></img>',
-        '<img class="reviews__image" src="img/in-car.jfif" alt="In car"></img>'
+        '<img class = "reviews__image" src="img/photographer.jfif" alt="Photographer"></img>',
+        '<img class = "reviews__image" src="img/elefant.jfif" alt="Elefant"></img>',
+        '<img class = "reviews__image" src="img/in-car.jfif" alt="In car"></img>'
     ];
 
+    const imgSlidesDesktop = [
+        '<img class = "reviews__image-desktop" src="img/photographer.jfif" alt="Photographer"></img>',
+        '<img class = "reviews__image-desktop" src="img/elefant.jfif" alt="Elefant"></img>',
+        '<img class = "reviews__image-desktop" src="img/in-car.jfif" alt="In car"></img>'
+    ];
+    
     const textSlides = document.querySelectorAll(".reviews__slide");
     const textSlidesDesktop = document.querySelectorAll(".reviews__slide-desktop");
 
@@ -80,41 +86,47 @@
         prevDot.classList.remove("active-dot");
     }
 
-    function renderImages(){
-        const imageConteiner = document.querySelector(".reviews__image-slide");
-        imageConteiner.innerHTML = imgSlides[currentSlide];
+    function renderImages(images){
+        const imageConteiner = desktop ? document.querySelector(".reviews__image-slide-desktop"): document.querySelector(".reviews__image-slide");
+        imageConteiner.innerHTML = images[currentSlide];          
     }
 
     function nextSlide(numSlide){
         if (numSlide !== currentSlide){  
             let slides = desktop ? textSlidesDesktop : textSlides;
             let dots = desktop ? allDotsD : allDots;
+            let images = desktop ? imgSlidesDesktop : imgSlides;
 
             renderDot(numSlide, dots);
 
             renderSlides(numSlide, slides);  
-            setTimeout(renderImages,1000);  
+            renderImages(images);  
         } 
     }
 
-    renderImages();  
+    const images = desktop ? imgSlidesDesktop : imgSlides;
+    renderImages(images);  
     
     window.addEventListener('resize', () => {
         const curdesktop = getDesktop();
         
         let slides = curdesktop ? textSlidesDesktop : textSlides;
-        let dots = desktop ? allDotsD : allDots;
+        let dots = curdesktop ? allDotsD : allDots;
+        let images = curdesktop ? imgSlidesDesktop : imgSlides;
 
         if (curdesktop !== desktop){
             let currentSlide = 0;
             let prevSlide = slides.length - 1;
 
             desktop = curdesktop;
-        }
-        renderSlides(numSlide, slides);
-        dots[0].classList.add("active-dot");
-        for (let i=1; i<dots.length; i++){
-            dots[i].classList.remove("active-dot");
+
+            renderSlides(0, slides);
+            dots[0].classList.add("active-dot");
+            for (let i=1; i<dots.length; i++){
+                dots[i].classList.remove("active-dot");
+            }
+
+            renderImages(images);
         }
     });    
 })();

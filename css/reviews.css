@@ -20,9 +20,15 @@
     padding-bottom: 30px;  
 }
 
-.reviews__slides, .reviews__slides-desktop {
+.reviews__slides {
     position: relative;
     min-height: 440px;
+}
+
+.reviews__slides-desktop {
+    position: relative;
+    min-height: 440px;
+    display: flex;
 }
 
 .reviews__slide, .reviews__slide-desktop{
@@ -58,32 +64,37 @@
     display: none;
 }
 
-.reviews__customer-text-desktop {
+.reviews__customer-text-desktop{
     display: flex;
 }
 
 .reviews__article-desktop {
-    flex-direction: column;
+    /*flex-direction: column;*/
     padding-top: 55px;
-    padding-right: 65px;
+    /*padding-right: 65px;*/
     padding-bottom: 30px;
-    padding-left: 65px;
+    /*padding-left: 65px;*/
     background-color: var(--light-dark-bacground-color);
-}
-
-.reviews__articles-desktop {
-    padding-left: 40px;
-    padding-right: 40px;
+    min-width: 50%;
 }
 
 .reviews-text-desktop {
     text-align: center;
     color: var(--title-color-light);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.reviews__image-slide-desktop {
+    display: flex;
+    max-width: 50%;
+    z-index: 2;
+    height: auto;
 }
 
 .reviews__image-desktop {
-    max-width: 50%;
-    min-height: 250px;
+    /*max-width: 50%;*/
+    /*min-height: 250px;*/
     flex-basis: 50%;
     object-fit: cover;
 }
@@ -98,15 +109,14 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 440px;
 } 
 
 .click-dots-desktop {
     position: absolute;
     display: flex;
     justify-content: center;
-    /*width: 50%;*/
-    padding-top: 440px;
+    width: 50%;
+    /*min-width: 100%;*/
 } 
 
 .click-dot {
@@ -156,50 +166,30 @@
     .reviews__slides {
         min-height: 400px;
     }
-
-    .click-dots {
-        padding-top: 410px;
-    } 
 }
 
 @media(min-width: 332px) {
     .reviews__slides {
         min-height: 375px;
     }
-
-    .click-dots {
-        padding-top: 390px;
-    } 
 }
 
 @media(min-width: 374px) {
     .reviews__slides {
         min-height: 330px;
     }
-
-    .click-dots {
-        padding-top: 345px;
-    } 
 }
 
 @media(min-width: 435px) {
     .reviews__slides {
         min-height: 320px;
     }
-
-    .click-dots {
-        padding-top: 320px;
-    } 
 }
 
 @media(min-width: 530px) {
     .reviews__slides {
         min-height: 292px;
     }
-
-    .click-dots {
-        padding-top: 292px;
-    } 
 }
 
 @media(min-width: 768px) {
