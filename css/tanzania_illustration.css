@@ -38,7 +38,7 @@
     display: inline-flex;
     width: 900%;
     margin-left: 0;
-    transition: margin-left 250ms;
+    transition: margin-left 500ms;
 }
 
 .next {
