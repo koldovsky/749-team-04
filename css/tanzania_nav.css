@@ -88,6 +88,21 @@
     display: flex;
 }
 
+.tour_list_nav li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.tour_list_nav{
+    display: none;
+    height: auto;
+}
+
+.tour_list_nav li{
+    list-style: none;
+ }
+
+
 
 @media (min-width: 999px) {
 
@@ -171,5 +186,22 @@
     #tour_list_bt{
         margin-left: 0;
         margin-right: 4px;
+    }
+
+    
+    .tour_list_nav li a{
+        text-decoration: none;
+        color: var(--bg-color);
+    }
+
+    .tour_list_nav{
+        position: absolute;
+        background-color: white;
+        color: #5A5D61;
+        max-width: 40em;
+        padding: 1em 1.6em;
+        border-radius: 3px;
+        top: 60px;
+        left: 27%;
     }
 }

@@ -2,7 +2,6 @@
    
    function drop_nav(){
         document.querySelector("#nav__tanzania").style.visibility = "visible";
-        document.querySelector("#tour_list_nav").style.height = "0";
         document.body.style.overflow = "hidden";
 
     }
@@ -13,12 +12,11 @@
     }
 
     function drop_tour_list_nav(){
-        document.querySelector("#tour_list_nav").style.visibility = "visible";
-        document.querySelector("#tour_list_nav").style.height = "auto";
+        document.querySelector("#tour_list_nav").style.display = "block";
     }
     
     function close_tour_list_nav(){
-        document.querySelector("#tour_list_nav").style.visibility = "hidden";
+        document.querySelector("#tour_list_nav").style.display= "none";
     }
 
         document.querySelector("#tanzania_header_contacts").addEventListener("click", close_tour_list_nav);
@@ -27,7 +25,6 @@
     document.addEventListener("click", function(e){
         if(e.target.id != "tour_list_nav" && e.target.id != "tour_list_bt"){
             close_tour_list_nav();
-            document.querySelector("#tour_list_nav").style.height = "0";
         }
     })
 
@@ -38,7 +35,7 @@
             document.querySelector("#icon_tanzania_nav").addEventListener("click", drop_nav);
          }else{
             document.querySelector("#nav__tanzania").style.visibility = "hidden";
-            document.querySelector("#tour_list_nav").style.visibility = "hidden";
+            document.querySelector("#tour_list_nav").style.display = "none";
             document.body.style.overflow = "visible";
          }
       }
