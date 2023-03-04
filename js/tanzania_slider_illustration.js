@@ -1,28 +1,29 @@
 (function(){
-    const deffMediaQuery = window.matchMedia("(min-width: 470px)");
-    const smallMediaQuery = window.matchMedia("(min-width: 470px)");
-    const medMediaQuery = window.matchMedia("(min-width: 770px)");
+    const deffMediaQuery = window.matchMedia("(max-width: 470px)");
+    const smallMediaQuery = window.matchMedia("(min-width: 470px) and (max-width: 770px)");
+    const medMediaQuery = window.matchMedia("(min-width: 770px) and (max-width: 1000px)");
     const largeMediaQuery = window.matchMedia("(min-width: 1000px)");
     const prev = document.querySelector("#prev_bt_tan");
     const next = document.querySelector("#next_bt_tan");
-    let margin = 0;
     const listPicture = document.querySelector(".illustration-picture");
     
    
 
      function changeQuantityDisplaySlidesToOne(deffMediaQuery) {
+        let marginDeff = 0;
+        listPicture.style.marginLeft = "0";
         if(deffMediaQuery.matches) {
             next.onclick = function(){
-                if(margin > -800){  
-                 margin -=100;
-                 listPicture.style.marginLeft = margin + "%";
+                if(marginDeff > -800){  
+                 marginDeff -=100;
+                 listPicture.style.marginLeft = marginDeff + "%";
                  }
              }
          
              prev.onclick = function(){
-                 if(0 > margin){  
-                  margin +=100;
-                  listPicture.style.marginLeft = margin + "%";
+                 if(0 > marginDeff){  
+                  marginDeff +=100;
+                  listPicture.style.marginLeft = marginDeff + "%";
                   }
               }
          }
@@ -31,18 +32,20 @@
       deffMediaQuery.addEventListener("change", changeQuantityDisplaySlidesToOne);
 
      function changeQuantityDisplaySlidesToTwo(smallMediaQuery) {
+        let marginSmall = 0;
+        listPicture.style.marginLeft = "0";
         if(smallMediaQuery.matches) {
             next.onclick = function(){
-                if(margin > -350){  
-                 margin -=50;
-                 listPicture.style.marginLeft = margin + "%";
+                if(marginSmall > -350){  
+                 marginSmall -=50;
+                 listPicture.style.marginLeft = marginSmall + "%";
                  }
              }
          
              prev.onclick = function(){
-                 if(0 > margin){  
-                  margin +=50;
-                  listPicture.style.marginLeft = margin + "%";
+                 if(0 > marginSmall){  
+                  marginSmall +=50;
+                  listPicture.style.marginLeft = marginSmall + "%";
                   }
               } 
          }
@@ -53,18 +56,20 @@
 
       
      function changeQuantityDisplaySlidesToThree(medMediaQuery) {
+        let marginMed = 0;
+        listPicture.style.marginLeft = "0";
         if(medMediaQuery.matches) {
             next.onclick = function(){
-                if(margin > -199){  
-                 margin -=33.333;
-                 listPicture.style.marginLeft = margin + "%";
+                if(marginMed > -199){  
+                 marginMed -=33.333;
+                 listPicture.style.marginLeft = marginMed + "%";
                  }
              }
          
              prev.onclick = function(){
-                 if(0 > margin){  
-                  margin +=33.333;
-                  listPicture.style.marginLeft = margin + "%";
+                 if(0 > marginMed){  
+                  marginMed +=33.333;
+                  listPicture.style.marginLeft = marginMed + "%";
                   }
               }
          }
@@ -74,18 +79,20 @@
       medMediaQuery.addEventListener("change", changeQuantityDisplaySlidesToThree);
 
       function changeQuantityDisplaySlidesToFive(largeMediaQuery) {
+        let marginLarge = 0;
+        listPicture.style.marginLeft = "0";
         if(largeMediaQuery.matches) {
             next.onclick = function(){
-                if(margin > -80){  
-                 margin -=20;
-                 listPicture.style.marginLeft = margin + "%";
+                if(marginLarge > -80){  
+                 marginLarge -=20;
+                 listPicture.style.marginLeft = marginLarge + "%";
                  }
              }
          
              prev.onclick = function(){
-                 if(0 > margin){  
-                  margin +=20;
-                  listPicture.style.marginLeft = margin + "%";
+                 if(0 > marginLarge){  
+                  marginLarge +=20;
+                  listPicture.style.marginLeft = marginLarge + "%";
                   }
               }
         }

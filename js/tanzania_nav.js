@@ -31,9 +31,9 @@
         }
     })
 
-    let myMediaQueryNav = window.matchMedia('(max-width: 999px)');
-    function widthChangeCallbackNav(myMediaQueryNav) {
-        if(myMediaQueryNav.matches) {
+    let MediaQueryNav = window.matchMedia('(max-width: 999px)');
+    function widthChangeCallbackNav(MediaQueryNav) {
+        if(MediaQueryNav.matches) {
             document.querySelector("#nav_icon_tanzania_close").addEventListener("click", close_nav);
             document.querySelector("#icon_tanzania_nav").addEventListener("click", drop_nav);
          }else{
@@ -43,7 +43,7 @@
          }
       }
     
-      widthChangeCallbackNav(myMediaQueryNav);
-      myMediaQueryNav.addEventListener("change", widthChangeCallbackNav);
+      widthChangeCallbackNav(MediaQueryNav);
+      MediaQueryNav.addEventListener("change", widthChangeCallbackNav);
 
     })()
