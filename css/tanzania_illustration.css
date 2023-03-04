@@ -38,16 +38,16 @@
     display: inline-flex;
     width: 900%;
     margin-left: 0;
-    transition: margin-left 250ms;
+    transition: margin-left 500ms;
 }
 
 .next {
-    right: -10px;
+    right: 4px;
     border-radius: 50% 50% 50% 50%;
   }
 
 .prev {
-    left: -10px;
+    left: 4px;
     border-radius: 50% 50% 50% 50%;
   }
 

@@ -1,57 +1,81 @@
 (function(){
+  const sMediaQuery = window.matchMedia("(max-width: 770px)");
+  const mMediaQuery = window.matchMedia("(min-width: 770px) and (max-width: 1000px)");
+  const lMediaQuery = window.matchMedia("(min-width: 1000px)");
+  const prevButton = document.querySelector("#prev_bt");
+  const nextButton = document.querySelector("#next_bt");
+  const listTour = document.querySelector(".list-tour-cards");
 
-let slideIndex = 1;
-const myMediaQuery = window.matchMedia("(min-width: 500px)");
-const slides = document.querySelectorAll(".tour-card"); 
-
-function changeSlideMob(n) {
-  showSlidesMob(slideIndex += n);
-}
-
-function showSlidesMob(n) {
-  let i;
-    if (n > slides.length) {slideIndex = slides.length}
-    if (n < 1) {slideIndex = 1}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+   function changeQuantityDisplayTourToOne(sMediaQuery) {
+      let marginS = 0;
+      listTour.style.marginLeft = "0";
+      if(sMediaQuery.matches) {
+          nextButton.onclick = function(){
+              if(marginS > -400){  
+               marginS -=100;
+               listTour.style.marginLeft = marginS + "%";
+               }
+           }
+       
+           prevButton.onclick = function(){
+               if(0 > marginS){  
+                marginS +=100;
+                listTour.style.marginLeft = marginS + "%";
+                }
+            } 
+       }
     }
-    slides[slideIndex-1].style.display = "flex";
-    
-  }
   
-  function changeSlides(n) {
-    showSlides(slideIndex += n);
-  }
+    changeQuantityDisplayTourToOne(sMediaQuery);
+    sMediaQuery.addEventListener("change", changeQuantityDisplayTourToOne);
 
-  function showSlides(n){
-    let i;
-    if (n > slides.length-2) {slideIndex = slides.length-2}
-    if (n < 1) {slideIndex = 1}
-    for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+    
+   function changeQuantityDisplayToursToTwo(mMediaQuery) {
+      let marginM = 0;
+      listTour.style.marginLeft = "0";
+      if(mMediaQuery.matches) {
+          nextButton.onclick = function(){
+              if(marginM > -150){  
+               marginM -=50;
+               listTour.style.marginLeft = marginM + "%";
+               }
+           }
+       
+           prevButton.onclick = function(){
+               if(0 > marginM){  
+                marginM +=50;
+                listTour.style.marginLeft = marginM + "%";
+                }
+            }
+       }
+    }
+   
+    changeQuantityDisplayToursToTwo(mMediaQuery);
+    mMediaQuery.addEventListener("change", changeQuantityDisplayToursToTwo);
 
-    slides[slideIndex-1].style.display = "flex";
-    slides[slideIndex].style.display = "flex";
-    slides[slideIndex+1].style.display = "flex";
-}
+    function changeQuantityDisplayToursToThree(lMediaQuery) {
+      let marginL = 0;
+      listTour.style.marginLeft = "0";
+      if(lMediaQuery.matches) {
+          nextButton.onclick = function(){
+              if(marginL > -65){  
+               marginL -=33.333;
+               listTour.style.marginLeft = marginL + "%";
+               }
+           }
+       
+           prevButton.onclick = function(){
+               if(0 > marginL){  
+                marginL +=33.333;
+                listTour.style.marginLeft = marginL + "%";
+                }
+            }
+      }
+    }
+   
+    changeQuantityDisplayToursToThree(lMediaQuery);
+    lMediaQuery.addEventListener("change", changeQuantityDisplayToursToThree);
 
-
-  function widthChangeCallback(myMediaQuery) {
-    if(myMediaQuery.matches) {
-      showSlides(slideIndex); 
-      document.querySelector("#next_bt").onclick = function(){changeSlides(1);}
-      document.querySelector("#prev_bt").onclick = function(){changeSlides(-1);}
-      
-     } else {
-      showSlidesMob(slideIndex);
-      document.querySelector("#next_bt").onclick = function(){changeSlideMob(1);}
-      document.querySelector("#prev_bt").onclick = function(){changeSlideMob(-1);}
-     }
-  }
-
-  widthChangeCallback(myMediaQuery);
-  myMediaQuery.addEventListener("change",widthChangeCallback);
 
 })()
 
