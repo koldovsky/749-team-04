@@ -160,4 +160,12 @@
     .list-tour-cards{
         width: 166.667%;
     }
+
+    .next {
+        right: 4px;
+      }
+    
+      .prev {
+        left: 4px;
+      }
 }
