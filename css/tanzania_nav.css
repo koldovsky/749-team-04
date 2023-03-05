@@ -69,6 +69,12 @@
     display: flex;
 }
 
+
+.nav__tanzania-item:focus,
+.tour_list_nav li a:focus{
+    color: var(--header-text-color);
+}
+
 #tour_list_bt{
     display: flex;
     height: 9px;

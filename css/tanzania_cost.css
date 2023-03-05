@@ -1,6 +1,8 @@
 .tour-cost-includes-excludes{
     background-image: url(../img/cost_bg_tanzania.jpg);
     padding: 70px 60px 70px 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .tour-cost-includes{

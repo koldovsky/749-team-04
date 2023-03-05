@@ -37,16 +37,26 @@
 .user-input-email {
     margin-bottom: 24px;
     padding: 19px 21px 19px 21px;
-    font-size: 0.6em;
+    font-size: 0.8em;
+    font-weight: 600;
     align-self: center;
     background-color: var(--contact-form-color);
     border: none;
+    color: var(--text-color);
+}
+
+.user-input-name:focus-visible,
+.user-input-phone:focus-visible,
+.user-input-email:focus-visible{
+    outline: 3px ridge rgb(73 195 242);
+    border-radius: 2px;
 }
 
 .user-input-submit{
     margin-bottom: 24px;
     padding: 19px 21px 19px 21px;
-    font-size: 0.6em;
+    font-size: 0.7em;
+    font-weight: 700;
     align-self: center;
     background-color: var(--header-text-color);
     color: var(--text-color);
