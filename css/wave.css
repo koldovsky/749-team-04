@@ -1,0 +1,36 @@
+.wave-inner {
+    background: var(--dark-background-color);
+}
+   /* background-image: url(../img/under_itinerary_block.jpg);*/
+    /*height: 70px;*/
+    /*display: flex;
+    width: 100%;*/
+    /*position: relative;
+    height: 90px;
+    width: 100%;/*
+    background: var(--carousel-team-bg-c)
+  }
+  
+  /*.wave-inner::before {
+          content: "";
+          display: block;
+          position: absolute;
+          border-radius: 100% 56%;
+          width: 56.66%;
+      height: 90px;
+      background-color: var(--dark-background-color);
+      right: -10px;
+      top: 50px;
+  }
+  
+  .wave-inner::after {
+          content: "";
+          display: block;
+          position: absolute;
+          border-radius: 100% 50%;
+          width: 50%;
+      height: 90px;
+      background-color: var(--carousel-team-bg-c);
+      left: 0;
+      top: 31px;
+  }*/
