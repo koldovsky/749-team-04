@@ -1,49 +1,72 @@
-.container {
+.container__team {
   max-width: 1200px;
   margin: auto;
+}
+
+.team__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.team__dots {
+  font-size: 3em;
+  letter-spacing: -0.07em;
+  color: var(--brand-color);
+  font-family: 'Robotobold', sans-serif;
+  line-height: 0;
+}
+
+.button_team_carousel img {
+  width: 20px;
+  height: 20px;
 }
 
 .team__list {
   background-color: var(--carousel-team-bg-c);
   padding-top: 10px;
   padding-bottom: 115px;
-  display: block;
-  position: relative;
 }
 
-.team__header {
+.team__foto {
+  min-width: 250px;
+  margin: auto;
+  object-fit: cover;
+}
+
+ .team__carousel-items {
+  padding: 50px 32px 50px 32px;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
+  flex-direction: row;
+  
+}
+/*
+.team__carousel-item {
+  padding: 0 10px 0 10px;
+} */
+
+
+
+
+
+
+
+
+/* @media (max-width: 990px) {
+  .team__foto {
+    min-width: 450px;
+    margin: auto;
+    object-fit: cover;
+  }
 }
 
-.team__title {
-  text-transform: none;
-  text-align: center;
-}
-
-.ready_bottom {
-    margin-top: -500px;
-    font-size: 5em;
-    letter-spacing: -0.07em;
-    color: var(--brand-color);
-    font-family: 'Robotobold', sans-serif;
-    line-height: 0;
-}
-
-/* не виходить так: не прикріпляється унизу team__title
-.team__title::after {
-    left: 50%;
-    right: auto;
-    content: "";
-    position: absolute;
-    width: 36px;
-    height: 5px;
-    background: linear-gradient(90deg, #24b8f1 0%, #24b8f1 14.28%, rgba(255, 255, 255, 0) 14.28%, rgba(255, 255, 255, 0) 28.56%, 
-    #24b8f1 28.56%, #24b8f1 42.84%, rgba(255, 255, 255, 0) 42.84%, rgba(255, 255, 255, 0) 57.12%, #24b8f1 57.12%, 
-    #24b8f1 71.8%, rgba(255, 255, 255, 0) 71.8%, rgba(255, 255, 255, 0) 85.68%, #24b8f1 85.68%, #24b8f1 100%);
-    bottom: 0;
+@media (max-width: 760px) {
+  .team__foto {
+    min-width: 600px;
+    margin: auto;
+    object-fit: cover;
+  }
 } */
 
 /* .team__dots {
@@ -56,10 +79,6 @@
     width: 5px;
     background-color: var(--brand-color);
     display: inline-block;
-}
-
-.team__image {
-    width: 300px;
 }
 
 .carousel__block {
@@ -78,7 +97,7 @@
     gap: 20px;
 } */
 
-.carousel__member-name {
+/* .carousel__member-name {
   font-family: "Dosis", sans-serif;
   font-size: 23px;
   font-weight: 700;
@@ -96,4 +115,4 @@
 .carousel__social-logos {
   justify-content: center;
   text-align: center;
-}
+} */
