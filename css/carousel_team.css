@@ -1,5 +1,6 @@
 .container__team {
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  width: 100%;
   margin: auto;
 }
 
@@ -30,7 +31,9 @@
 }
 
 .team__foto {
-  min-width: 250px;
+  /* min-width: 250px;
+  min-height: 350px; */
+  max-width: 300px;
   margin: auto;
   object-fit: cover;
 }
@@ -38,16 +41,20 @@
  .team__carousel-items {
   padding: 50px 32px 50px 32px;
   display: flex;
-  flex-direction: row;
-  
+  align-items: center;
+  justify-content: space-between;
 }
-/*
+
 .team__carousel-item {
-  padding: 0 10px 0 10px;
-} */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
-
+.team_item img {
+  padding: 5px;
+}
 
 
 

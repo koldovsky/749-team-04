@@ -1,13 +1,9 @@
 (() => {
     const slides = [
-        `<img class="team__foto" src="img/team-dan.jpg" alt="Member of team Dan Pitts">
-                    <div class="carousel__member-name">Dan Pitts</div>`,
-        `<img class="team__foto" src="img/team-helena.jpg" alt="Member of team Helena Farse">
-                    <div class="carousel__member-name">Helena Farse</div>`,
-        `<img class="team__foto" src="img/team-lucy.jpg" alt="Member of team Lucy Madins">
-                    <div class="carousel__member-name">Lucy Madins</div>`,
-        `<img class="team__foto" src="img/team-tomas.jpg" class="d-block w-50 mx-auto" alt="Member of team Tomas Willens">
-                    <div class="carousel__member-name">Tomas Willens</div>`
+        '<div class="team_item"><img class="team__foto" src="img/team-dan.jpg" alt="Member of team Dan Pitts"><div class="carousel__member-name">Dan Pitts</div></div>',
+        '<div class="team_item"><img class="team__foto" src="img/team-helena.jpg" alt="Member of team Helena Farse"><div class="carousel__member-name">Helena Farse</div></div>',
+        '<div class="team_item"><img class="team__foto" src="img/team-lucy.jpg" alt="Member of team Lucy Madins"><div class="carousel__member-name">Lucy Madins</div></div>',
+        '<div class="team_item"><img class="team__foto" src="img/team-tomas.jpg" alt="Member of team Tomas Willens"><div class="carousel__member-name">Tomas Willens</div></div>'
     ];
 
 
@@ -20,7 +16,7 @@
             const secondSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1;
             slidesContainer.innerHTML += slides[secondSlide];
             if (window.innerHTML > 900) {
-                const thirdSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1;
+                const thirdSlide = secondSlide + 1 >= slides.length ? 0 : secondSlide + 1;
                 slidesContainer.innerHTML += slides[thirdSlide];
             }
         }
@@ -36,10 +32,7 @@
         renderSlides(slides);
     }
 
-    // setInterval(nextSlide, 3000);
     renderSlides(slides);
-
-    //buttons
 
     const nextButton = document.querySelector('.team-carousel__next');
     nextButton.addEventListener('click', nextSlide);
@@ -49,6 +42,5 @@
 
     window.addEventListener('resize', () => {
         renderSlides(slides);
-    })
-
+    });
 })();
