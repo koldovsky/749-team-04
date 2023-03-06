@@ -7,10 +7,12 @@ function dropDownTourList(){
     if(countDrop == 0){
         document.querySelector("#tour-dropdown-menu").style.display = "block";
         document.querySelector("#tour-dropdown-menu").style.width = "fit-content";
+        document.querySelector("#tour_list_button").style.transform = "rotate(180deg)";
         countDrop+=1;
     }else{
         document.querySelector("#tour-dropdown-menu").style.display= "none";
         document.querySelector("#tour-dropdown-menu").style.width = "0";
+        document.querySelector("#tour_list_button").style.transform = "rotate(0deg)"
         countDrop-=1;
     }
 }
