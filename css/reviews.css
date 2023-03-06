@@ -20,6 +20,7 @@
     grid-area: image;
     z-index: 2;    
     filter: contrast(120%) brightness(110%);
+    position:relative;
 }  
 
 .reviews__title {
@@ -75,6 +76,11 @@
 .reviews__image {
     object-fit: cover;
     height: 100%;
+    position:absolute;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
 }
 
 .click-dots {
@@ -93,9 +99,26 @@
     cursor: pointer;
 }
 
-.active-dot {
+.active-dot{
     background: var(--active-dot-color);
     cursor: default;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes leftNext {
@@ -109,8 +132,10 @@
 }
 
 @keyframes rightNext {
-    from {left: -100%;}
-    to {left: 0;}
+    from {left: -100%;
+        opacity: 0}
+    to {left: 0;
+        opacity: 1}
 }
 
 @keyframes rightCurr {
