@@ -13,10 +13,12 @@
 
     function drop_tour_list_nav(){
         document.querySelector("#tour_list_nav").style.display = "block";
+        document.querySelector("#tour_list_bt").style.transform = "rotate(180deg)";
     }
     
     function close_tour_list_nav(){
         document.querySelector("#tour_list_nav").style.display= "none";
+        document.querySelector("#tour_list_bt").style.transform = "rotate(0deg)";
     }
 
         document.querySelector("#tanzania_header_contacts").addEventListener("click", close_tour_list_nav);
