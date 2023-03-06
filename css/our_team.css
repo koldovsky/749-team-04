@@ -4,6 +4,11 @@
   margin: auto;
   min-height: 700px;
 }
+
+button {
+  all: initial;
+}
+
 .team__header {
   display: flex;
   flex-direction: column;
@@ -30,9 +35,7 @@
 }
 
 .team__foto {
-  /* height: auto; */
   min-height: 350px;
-  /* width: 100%; */
   min-width: 250px;
   margin: auto;
   object-fit: cover;
@@ -81,68 +84,3 @@
   position: relative;
   bottom: -120px;
 }
-
-/* 
-@media (max-width: 990px) {
-  .team__foto {
-    max-width: 450px;
-    margin: auto;
-    object-fit: cover;
-  }
-}
-
-@media (max-width: 760px) {
-  .team__foto {
-    max-width: 600px;
-    margin: auto;
-    object-fit: cover;
-  }
-} */
-
-/* .team__dots {
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.team__dot {
-    height: 5px;
-    width: 5px;
-    background-color: var(--brand-color);
-    display: inline-block;
-}
-
-.carousel__block {
-    margin-top: 50px;
-    padding-left: 32px;
-    padding-right: 32px;
-    max-width: 1200px;
-}
-
-.team__carousel {
-    display: flex;
-    justify-content: center;
-    margin-left: -15px;
-    margin-right: -15px;
-    flex-wrap: wrap;
-    gap: 20px;
-} */
-
-/* .carousel__member-name {
-  font-family: "Dosis", sans-serif;
-  font-size: 23px;
-  font-weight: 700;
-  font-style: normal;
-  text-align: center;
-}
-
-.carousel__member_job {
-  font-family: "Dosis", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.carousel__social-logos {
-  justify-content: center;
-  text-align: center;
-} */
