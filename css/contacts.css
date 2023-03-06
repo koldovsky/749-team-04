@@ -1,5 +1,5 @@
 #contacts {
-    background-color: var(--light-dark-bacground-color);
+    background-color: var(--dark-background-color);
     padding: 70px 0 140px 0;
     display: -webkit-flex;
     display: flex;

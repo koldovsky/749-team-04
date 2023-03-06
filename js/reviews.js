@@ -1,10 +1,4 @@
 (function () {
-    const imgSlides = [
-        '<img class = "reviews__image" src="img/photographer.jfif" alt="Photographer"></img>',
-        '<img class = "reviews__image" src="img/elefant.jfif" alt="Elefant"></img>',
-        '<img class = "reviews__image" src="img/in-car.jfif" alt="In car"></img>'
-    ];
-
     const textSlides = document.querySelectorAll(".reviews__slide");
 
     let currentSlide = 0;
@@ -21,6 +15,10 @@
 
     const allDots = document.querySelectorAll(".click-dot");
     allDots[0].classList.add("active-dot");
+
+    const imageConteiner = document.querySelectorAll(".reviews__image")
+    setDesplayNone(imageConteiner);
+    imageConteiner[0].style.display = "block";
 
     setDesplayNone(textSlides);
     textSlides[0].style.left = "0";
@@ -59,8 +57,9 @@
     }
 
     function renderImages(){
-        const imageConteiner = document.querySelector(".reviews__image-slide");
-        imageConteiner.innerHTML = imgSlides[currentSlide];          
+        const imageConteiner = document.querySelectorAll(".reviews__image")
+        imageConteiner[prevSlide].style.display = "none";
+        imageConteiner[currentSlide].style.display = "block";       
     }
 
     function nextSlide(numSlide){
@@ -68,9 +67,7 @@
             renderDot(numSlide);
 
             renderSlides(numSlide);  
-            renderImages();  
+           setTimeout(renderImages,500);  
         } 
     }
-
-    renderImages(imgSlides);  
 })();
