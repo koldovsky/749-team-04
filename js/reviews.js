@@ -67,7 +67,7 @@
             renderDot(numSlide);
 
             renderSlides(numSlide);  
-           setTimeout(renderImages,1000);  
+           setTimeout(renderImages,500);  
         } 
     }
 })();
