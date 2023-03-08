@@ -1,20 +1,19 @@
-const form = document.getElementById('form');
-const email = document.getElementById('email');
+const form = document.querySelector('form');
+const emailInput = document.getElementById('email');
 
-function checkEmail(input) {
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (re.test(input.value.trim())) {
-    showSuccess(input);
-  } else {
-    showError(input, 'Email is not valid');
-  }
+
+function isValidEmail(email) {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
 }
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-  
-    if(checkRequired(email)){
-      checkEmail(email);
-  
-    }
-  
-  });
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const emailValue = emailInput.value.trim();
+
+  if (isValidEmail(emailValue)) {
+    form.submit();
+  } else {
+    alert('Please enter a valid email address.');
+  }
+});
